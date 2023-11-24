@@ -1,6 +1,6 @@
 ﻿namespace Undertale
 {
-    partial class Form1
+    partial class Undertale
     {
         /// <summary>
         ///  Required designer variable.
