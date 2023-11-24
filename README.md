@@ -48,9 +48,9 @@ StoryLife est un jeu développé en utilisant le langage de programmation C#. Ce
 │   ├───TestPlayer.cs
 │   ├───TestStory.cs
 │       └───Dependencies
-└───TestShopping                                    //form app and design
+└───Undertale                                      //form app and design
 │   ├───Program.cs
-│   ├───Form1.cs
+│   ├───Undertale.cs
 │       └───Dependencies
 
 ## Contact
