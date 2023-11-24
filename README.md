@@ -23,42 +23,38 @@ StoryLife est un jeu développé en utilisant le langage de programmation C#. Ce
 
 ### On dev environment
 
-How to get dependencies and build?
-How to run the tests?
-
-### On integration environment
-
-How to deploy the application outside the dev environment.
+- Une fois le projet ouvert, aller dans l'onglet Tools, puis dans NuGet Package Manager et séléctionner Package Manager Console
+- Tapez la commande "Install-Package MySQL.Data"
 
 ## Directory structure
 
-* Tip: try the tree bash command
-
-* ├───Docs
-├───Shopping                                        //classes and packages
-│   ├───bin                                         //the binary to deploy on the end-user environment
-│   │   └───Debug
-│   └───obj
-│       └───Debug                                   
+* ├───doc
+* ├───Solution Items
+      ├───README.md
+├───StoryLife                                       //classes and packages
+│   ├───Choice.cs
+│   ├───Frame.cs
+│   ├───Game.cs
+│   ├───Menu.cs
+│   ├───Player.cs
+│   ├───Story.cs
+│       └───Dependencies
 └───TestShopping                                    //test classes
-    ├───bin
-    │   └───Debug
-    └───obj
-        └───Debug
-
-## Collaborate
-
-* Take time to read some readme and find the way you would like to help other developers collaborate with you.
-
-* They need to know:
-  * How to propose a new feature (issue, pull request)
-  * [How to commit](https://www.conventionalcommits.org/en/v1.0.0/)
-  * [How to use your workflow](https://nvie.com/posts/a-successful-git-branching-model/)
-
-## License
-
-* [Choose the license adapted to your project](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository).
+│   ├───GlobalUsings.cs
+│   ├───TestChoice.cs
+│   ├───TestFrame.cs
+│   ├───TestGame.cs
+│   ├───TestMenu.cs
+│   ├───TestPlayer.cs
+│   ├───TestStory.cs
+│       └───Dependencies
+└───TestShopping                                    //form app and design
+│   ├───Program.cs
+│   ├───Form1.cs
+│       └───Dependencies
 
 ## Contact
 
-* How to get in contact with you? Discord, Trello, Issue?
+Timothé Kobel           : timothe.kobel@eduvaud.ch
+Amin De Abreu Jdidi     : marc-antoine.aboud@eduvaud.ch
+Marc-Antoine Aboud      : amin.deabreu@eduvaud.ch
