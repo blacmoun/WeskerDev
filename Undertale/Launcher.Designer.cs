@@ -150,6 +150,5 @@
         private PictureBox pictureBoxMenu;
         private PictureBox pictureBoxFlowerL;
         private PictureBox pictureBoxFlowerR;
-        private PictureBox pictureBoxGrass;
     }
 }

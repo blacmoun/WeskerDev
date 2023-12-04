@@ -13,7 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="Undertale.cs">
+    <Compile Update="Launcher.cs">
       <Generator></Generator>
       <CustomToolNamespace></CustomToolNamespace>
     </Compile>
