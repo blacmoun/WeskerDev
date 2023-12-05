@@ -17,7 +17,8 @@ namespace Undertale
 
         private void SettButton_Click(object sender, EventArgs e)
         {
-
+            Settings settings = new Settings();
+            settings.Show();
         }
 
         private void PlayButton_Click(object sender, EventArgs e)
