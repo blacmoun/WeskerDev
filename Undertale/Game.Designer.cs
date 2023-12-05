@@ -34,6 +34,7 @@ namespace Undertale
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Game));
             pictureBox1 = new PictureBox();
             timer1 = new System.Windows.Forms.Timer(components);
+            rjButton1 = new WindowsFormsApp1.RJButton();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -53,12 +54,33 @@ namespace Undertale
             // 
             timer1.Enabled = true;
             // 
+            // rjButton1
+            // 
+            rjButton1.BackColor = Color.Transparent;
+            rjButton1.BackgroundColor = Color.Transparent;
+            rjButton1.BorderColor = Color.PaleVioletRed;
+            rjButton1.BorderRadius = 40;
+            rjButton1.BorderSize = 0;
+            rjButton1.FlatAppearance.BorderSize = 0;
+            rjButton1.FlatStyle = FlatStyle.Flat;
+            rjButton1.Font = new Font("Segoe UI", 19F);
+            rjButton1.ForeColor = Color.White;
+            rjButton1.Location = new Point(1139, 688);
+            rjButton1.Name = "rjButton1";
+            rjButton1.Size = new Size(315, 78);
+            rjButton1.TabIndex = 1;
+            rjButton1.Text = "Suivant";
+            rjButton1.TextColor = Color.White;
+            rjButton1.UseVisualStyleBackColor = false;
+            rjButton1.Click += rjButton1_Click;
+            // 
             // Game
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaptionText;
             ClientSize = new Size(1894, 1061);
+            Controls.Add(rjButton1);
             Controls.Add(pictureBox1);
             Name = "Game";
             Text = "Game";
@@ -70,5 +92,6 @@ namespace Undertale
 
         public PictureBox pictureBox1;
         private System.Windows.Forms.Timer timer1;
+        private WindowsFormsApp1.RJButton rjButton1;
     }
 }
