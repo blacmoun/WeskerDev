@@ -20,7 +20,6 @@ namespace Undertale
         public void InitializeTimer()
         {
  
-                pictureBox1.Enabled = true;
             
         }
 

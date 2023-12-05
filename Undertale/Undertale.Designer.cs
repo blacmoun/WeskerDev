@@ -35,6 +35,7 @@
             pictureBoxMenu = new PictureBox();
             pictureBoxFlowerL = new PictureBox();
             pictureBoxFlowerR = new PictureBox();
+            rjButton1 = new WindowsFormsApp1.RJButton();
             ((System.ComponentModel.ISupportInitialize)pictureBoxMenu).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxFlowerL).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxFlowerR).BeginInit();
@@ -118,6 +119,24 @@
             pictureBoxFlowerR.TabIndex = 5;
             pictureBoxFlowerR.TabStop = false;
             // 
+            // rjButton1
+            // 
+            rjButton1.BackColor = Color.Transparent;
+            rjButton1.BackgroundColor = Color.Transparent;
+            rjButton1.BorderColor = Color.PaleVioletRed;
+            rjButton1.BorderRadius = 40;
+            rjButton1.BorderSize = 0;
+            rjButton1.FlatAppearance.BorderSize = 0;
+            rjButton1.FlatStyle = FlatStyle.Flat;
+            rjButton1.ForeColor = Color.White;
+            rjButton1.Location = new Point(621, 61);
+            rjButton1.Name = "rjButton1";
+            rjButton1.Size = new Size(167, 55);
+            rjButton1.TabIndex = 6;
+            rjButton1.Text = "rjButton1";
+            rjButton1.TextColor = Color.White;
+            rjButton1.UseVisualStyleBackColor = false;
+            // 
             // Undertale
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -126,6 +145,7 @@
             BackColor = SystemColors.ActiveCaptionText;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(852, 366);
+            Controls.Add(rjButton1);
             Controls.Add(pictureBoxFlowerR);
             Controls.Add(pictureBoxFlowerL);
             Controls.Add(pictureBoxMenu);
@@ -150,5 +170,6 @@
         private PictureBox pictureBoxMenu;
         private PictureBox pictureBoxFlowerL;
         private PictureBox pictureBoxFlowerR;
+        private WindowsFormsApp1.RJButton rjButton1;
     }
 }
