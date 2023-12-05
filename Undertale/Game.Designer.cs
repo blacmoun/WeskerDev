@@ -30,8 +30,10 @@ namespace Undertale
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Game));
             pictureBox1 = new PictureBox();
+            timer1 = new System.Windows.Forms.Timer(components);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -39,11 +41,17 @@ namespace Undertale
             // 
             pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
             pictureBox1.BackgroundImageLayout = ImageLayout.Center;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(335, 34);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(872, 234);
+            pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
+            // 
+            // timer1
+            // 
+            timer1.Enabled = true;
             // 
             // Game
             // 
@@ -61,5 +69,6 @@ namespace Undertale
         #endregion
 
         public PictureBox pictureBox1;
+        private System.Windows.Forms.Timer timer1;
     }
 }

@@ -15,7 +15,15 @@ namespace Undertale
         public Game()
         {
             InitializeComponent();
+
         }
+        public void InitializeTimer()
+        {
+ 
+                pictureBox1.Enabled = true;
+            
+        }
+
 
 
     }
