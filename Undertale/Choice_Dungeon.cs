@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Undertale
@@ -16,7 +9,25 @@ namespace Undertale
         {
             InitializeComponent();
         }
-        
 
+        private void Button_exit_dungeon_Click(object sender, EventArgs e)
+        {
+            // Accéder au formulaire parent et le fermer
+            Game parentForm = this.FindForm() as Game;
+            if (parentForm != null)
+            {
+                parentForm.Close();
+            }
+        }
+
+        private void rjButton1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ButtonEnterDungeon_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

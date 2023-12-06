@@ -29,28 +29,28 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Choice_Dungeon));
-            rjButton1 = new WindowsFormsApp1.RJButton();
+            ButtonEnterDungeon = new WindowsFormsApp1.RJButton();
             Button_exit_dungeon = new WindowsFormsApp1.RJButton();
             SuspendLayout();
             // 
-            // rjButton1
+            // ButtonEnterDungeon
             // 
-            rjButton1.BackColor = Color.Transparent;
-            rjButton1.BackgroundColor = Color.Transparent;
-            rjButton1.BorderColor = Color.PaleVioletRed;
-            rjButton1.BorderRadius = 40;
-            rjButton1.BorderSize = 0;
-            rjButton1.FlatAppearance.BorderSize = 0;
-            rjButton1.FlatStyle = FlatStyle.Flat;
-            rjButton1.Font = new Font("Segoe UI", 19F);
-            rjButton1.ForeColor = Color.White;
-            rjButton1.Location = new Point(877, 314);
-            rjButton1.Name = "rjButton1";
-            rjButton1.Size = new Size(315, 78);
-            rjButton1.TabIndex = 0;
-            rjButton1.Text = "Entrer dans le donjon";
-            rjButton1.TextColor = Color.White;
-            rjButton1.UseVisualStyleBackColor = false;
+            ButtonEnterDungeon.BackColor = Color.Transparent;
+            ButtonEnterDungeon.BackgroundColor = Color.Transparent;
+            ButtonEnterDungeon.BorderColor = Color.PaleVioletRed;
+            ButtonEnterDungeon.BorderRadius = 40;
+            ButtonEnterDungeon.BorderSize = 0;
+            ButtonEnterDungeon.FlatAppearance.BorderSize = 0;
+            ButtonEnterDungeon.FlatStyle = FlatStyle.Flat;
+            ButtonEnterDungeon.Font = new Font("Segoe UI", 19F);
+            ButtonEnterDungeon.ForeColor = Color.White;
+            ButtonEnterDungeon.Location = new Point(877, 314);
+            ButtonEnterDungeon.Name = "ButtonEnterDungeon";
+            ButtonEnterDungeon.Size = new Size(315, 78);
+            ButtonEnterDungeon.TabIndex = 0;
+            ButtonEnterDungeon.Text = "Entrer dans le donjon";
+            ButtonEnterDungeon.TextColor = Color.White;
+            ButtonEnterDungeon.UseVisualStyleBackColor = false;
             // 
             // Button_exit_dungeon
             // 
@@ -70,6 +70,7 @@
             Button_exit_dungeon.Text = "Sortir";
             Button_exit_dungeon.TextColor = Color.White;
             Button_exit_dungeon.UseVisualStyleBackColor = false;
+            Button_exit_dungeon.Click += Button_exit_dungeon_Click;
             // 
             // Choice_Dungeon
             // 
@@ -78,7 +79,7 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             Controls.Add(Button_exit_dungeon);
-            Controls.Add(rjButton1);
+            Controls.Add(ButtonEnterDungeon);
             Name = "Choice_Dungeon";
             Size = new Size(1910, 1100);
             ResumeLayout(false);
@@ -86,7 +87,7 @@
 
         #endregion
 
-        private WindowsFormsApp1.RJButton rjButton1;
+        private WindowsFormsApp1.RJButton ButtonEnterDungeon;
         private WindowsFormsApp1.RJButton Button_exit_dungeon;
     }
 }
