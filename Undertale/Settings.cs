@@ -17,7 +17,12 @@ namespace Undertale
             InitializeComponent();
         }
 
-        private void loginButton_Click(object sender, EventArgs e)
+        private void UserTxt_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LoginButton_Click_1(object sender, EventArgs e)
         {
 
         }
