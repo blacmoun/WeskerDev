@@ -28,65 +28,67 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Settings));
             userlbl = new Label();
-            passlbl = new Label();
             UserTxt = new TextBox();
-            PassTxt = new TextBox();
-            loginButton = new Button();
+            LoginButton = new Button();
+            Settinglbl = new Label();
             SuspendLayout();
             // 
             // userlbl
             // 
             userlbl.AutoSize = true;
-            userlbl.Location = new Point(37, 32);
+            userlbl.Location = new Point(12, 104);
             userlbl.Name = "userlbl";
             userlbl.Size = new Size(62, 15);
             userlbl.TabIndex = 0;
             userlbl.Text = "UserName";
             // 
-            // passlbl
-            // 
-            passlbl.AutoSize = true;
-            passlbl.Location = new Point(37, 101);
-            passlbl.Name = "passlbl";
-            passlbl.Size = new Size(57, 15);
-            passlbl.TabIndex = 1;
-            passlbl.Text = "Password";
-            // 
             // UserTxt
             // 
-            UserTxt.Location = new Point(105, 29);
+            UserTxt.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            UserTxt.Location = new Point(12, 91);
+            UserTxt.Multiline = true;
             UserTxt.Name = "UserTxt";
-            UserTxt.Size = new Size(241, 23);
+            UserTxt.Size = new Size(269, 47);
             UserTxt.TabIndex = 2;
+            UserTxt.TextChanged += UserTxt_TextChanged;
             // 
-            // PassTxt
+            // LoginButton
             // 
-            PassTxt.Location = new Point(105, 98);
-            PassTxt.Name = "PassTxt";
-            PassTxt.Size = new Size(241, 23);
-            PassTxt.TabIndex = 3;
+            LoginButton.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            LoginButton.BackColor = SystemColors.ActiveBorder;
+            LoginButton.BackgroundImage = (Image)resources.GetObject("LoginButton.BackgroundImage");
+            LoginButton.Font = new Font("Forte", 27.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            LoginButton.ForeColor = SystemColors.ButtonFace;
+            LoginButton.Location = new Point(12, 144);
+            LoginButton.Name = "LoginButton";
+            LoginButton.Size = new Size(269, 118);
+            LoginButton.TabIndex = 5;
+            LoginButton.Text = "Login";
+            LoginButton.UseVisualStyleBackColor = true;
+            LoginButton.Click += LoginButton_Click_1;
             // 
-            // loginButton
+            // Settinglbl
             // 
-            loginButton.Location = new Point(105, 174);
-            loginButton.Name = "loginButton";
-            loginButton.Size = new Size(119, 46);
-            loginButton.TabIndex = 4;
-            loginButton.Text = "Login";
-            loginButton.UseVisualStyleBackColor = true;
-            loginButton.Click += loginButton_Click;
+            Settinglbl.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Settinglbl.ForeColor = SystemColors.ActiveCaption;
+            Settinglbl.Location = new Point(12, 9);
+            Settinglbl.Name = "Settinglbl";
+            Settinglbl.Size = new Size(269, 79);
+            Settinglbl.TabIndex = 6;
+            Settinglbl.Text = "Enter your Username";
+            Settinglbl.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // Settings
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaptionText;
-            ClientSize = new Size(431, 277);
-            Controls.Add(loginButton);
-            Controls.Add(PassTxt);
+            ClientSize = new Size(293, 274);
+            Controls.Add(Settinglbl);
+            Controls.Add(LoginButton);
             Controls.Add(UserTxt);
-            Controls.Add(passlbl);
             Controls.Add(userlbl);
             Name = "Settings";
             Text = "Settings";
@@ -101,5 +103,7 @@
         private TextBox UserTxt;
         private TextBox PassTxt;
         private Button loginButton;
+        private Button LoginButton;
+        private Label Settinglbl;
     }
 }
