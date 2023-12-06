@@ -29,8 +29,8 @@ namespace Undertale
             Game nouvelleForm = new Game();
 
             // Centrez le PictureBox en haut de l'écran
-            nouvelleForm.pictureBox1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            nouvelleForm.pictureBox1.Dock = DockStyle.Top;
+            nouvelleForm.EnterName_pictureBox.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            nouvelleForm.EnterName_pictureBox.Dock = DockStyle.Top;
 
             // Mettez la nouvelle forme en plein écran
             nouvelleForm.WindowState = FormWindowState.Maximized;

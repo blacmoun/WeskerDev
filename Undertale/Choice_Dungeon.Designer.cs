@@ -1,6 +1,6 @@
 ﻿namespace Undertale
 {
-    partial class UserControl1
+    partial class Choice_Dungeon
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserControl1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Choice_Dungeon));
             rjButton1 = new WindowsFormsApp1.RJButton();
-            rjButton2 = new WindowsFormsApp1.RJButton();
+            Button_exit_dungeon = new WindowsFormsApp1.RJButton();
             SuspendLayout();
             // 
             // rjButton1
@@ -52,34 +52,34 @@
             rjButton1.TextColor = Color.White;
             rjButton1.UseVisualStyleBackColor = false;
             // 
-            // rjButton2
+            // Button_exit_dungeon
             // 
-            rjButton2.BackColor = Color.Transparent;
-            rjButton2.BackgroundColor = Color.Transparent;
-            rjButton2.BorderColor = Color.PaleVioletRed;
-            rjButton2.BorderRadius = 40;
-            rjButton2.BorderSize = 0;
-            rjButton2.FlatAppearance.BorderSize = 0;
-            rjButton2.FlatStyle = FlatStyle.Flat;
-            rjButton2.Font = new Font("Segoe UI", 19F);
-            rjButton2.ForeColor = Color.White;
-            rjButton2.Location = new Point(53, 536);
-            rjButton2.Name = "rjButton2";
-            rjButton2.Size = new Size(315, 78);
-            rjButton2.TabIndex = 1;
-            rjButton2.Text = "Sortir";
-            rjButton2.TextColor = Color.White;
-            rjButton2.UseVisualStyleBackColor = false;
+            Button_exit_dungeon.BackColor = Color.Transparent;
+            Button_exit_dungeon.BackgroundColor = Color.Transparent;
+            Button_exit_dungeon.BorderColor = Color.PaleVioletRed;
+            Button_exit_dungeon.BorderRadius = 40;
+            Button_exit_dungeon.BorderSize = 0;
+            Button_exit_dungeon.FlatAppearance.BorderSize = 0;
+            Button_exit_dungeon.FlatStyle = FlatStyle.Flat;
+            Button_exit_dungeon.Font = new Font("Segoe UI", 19F);
+            Button_exit_dungeon.ForeColor = Color.White;
+            Button_exit_dungeon.Location = new Point(53, 536);
+            Button_exit_dungeon.Name = "Button_exit_dungeon";
+            Button_exit_dungeon.Size = new Size(315, 78);
+            Button_exit_dungeon.TabIndex = 1;
+            Button_exit_dungeon.Text = "Sortir";
+            Button_exit_dungeon.TextColor = Color.White;
+            Button_exit_dungeon.UseVisualStyleBackColor = false;
             // 
-            // UserControl1
+            // Choice_Dungeon
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
-            Controls.Add(rjButton2);
+            Controls.Add(Button_exit_dungeon);
             Controls.Add(rjButton1);
-            Name = "UserControl1";
+            Name = "Choice_Dungeon";
             Size = new Size(1910, 1100);
             ResumeLayout(false);
         }
@@ -87,6 +87,6 @@
         #endregion
 
         private WindowsFormsApp1.RJButton rjButton1;
-        private WindowsFormsApp1.RJButton rjButton2;
+        private WindowsFormsApp1.RJButton Button_exit_dungeon;
     }
 }

@@ -32,47 +32,60 @@ namespace Undertale
         {
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Game));
-            pictureBox1 = new PictureBox();
+            EnterName_pictureBox = new PictureBox();
             timer1 = new System.Windows.Forms.Timer(components);
-            rjButton1 = new WindowsFormsApp1.RJButton();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            EnterName_next_button = new WindowsFormsApp1.RJButton();
+            TextBox_EnterName = new TextBox();
+            ((System.ComponentModel.ISupportInitialize)EnterName_pictureBox).BeginInit();
             SuspendLayout();
             // 
-            // pictureBox1
+            // EnterName_pictureBox
             // 
-            pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
-            pictureBox1.BackgroundImageLayout = ImageLayout.Center;
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(335, 34);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(872, 234);
-            pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
+            EnterName_pictureBox.BackgroundImage = (Image)resources.GetObject("EnterName_pictureBox.BackgroundImage");
+            EnterName_pictureBox.BackgroundImageLayout = ImageLayout.Center;
+            EnterName_pictureBox.Image = (Image)resources.GetObject("EnterName_pictureBox.Image");
+            EnterName_pictureBox.Location = new Point(335, 34);
+            EnterName_pictureBox.Name = "EnterName_pictureBox";
+            EnterName_pictureBox.Size = new Size(872, 234);
+            EnterName_pictureBox.SizeMode = PictureBoxSizeMode.CenterImage;
+            EnterName_pictureBox.TabIndex = 0;
+            EnterName_pictureBox.TabStop = false;
             // 
             // timer1
             // 
             timer1.Enabled = true;
             // 
-            // rjButton1
+            // EnterName_next_button
             // 
-            rjButton1.BackColor = Color.Transparent;
-            rjButton1.BackgroundColor = Color.Transparent;
-            rjButton1.BorderColor = Color.PaleVioletRed;
-            rjButton1.BorderRadius = 40;
-            rjButton1.BorderSize = 0;
-            rjButton1.FlatAppearance.BorderSize = 0;
-            rjButton1.FlatStyle = FlatStyle.Flat;
-            rjButton1.Font = new Font("Segoe UI", 19F);
-            rjButton1.ForeColor = Color.White;
-            rjButton1.Location = new Point(1139, 688);
-            rjButton1.Name = "rjButton1";
-            rjButton1.Size = new Size(315, 78);
-            rjButton1.TabIndex = 1;
-            rjButton1.Text = "Suivant";
-            rjButton1.TextColor = Color.White;
-            rjButton1.UseVisualStyleBackColor = false;
-            rjButton1.Click += rjButton1_Click;
+            EnterName_next_button.BackColor = Color.Transparent;
+            EnterName_next_button.BackgroundColor = Color.Transparent;
+            EnterName_next_button.BorderColor = Color.PaleVioletRed;
+            EnterName_next_button.BorderRadius = 40;
+            EnterName_next_button.BorderSize = 0;
+            EnterName_next_button.FlatAppearance.BorderSize = 0;
+            EnterName_next_button.FlatStyle = FlatStyle.Flat;
+            EnterName_next_button.Font = new Font("Segoe UI", 19F);
+            EnterName_next_button.ForeColor = Color.White;
+            EnterName_next_button.Location = new Point(1139, 688);
+            EnterName_next_button.Name = "EnterName_next_button";
+            EnterName_next_button.Size = new Size(315, 78);
+            EnterName_next_button.TabIndex = 1;
+            EnterName_next_button.Text = "Suivant";
+            EnterName_next_button.TextColor = Color.White;
+            EnterName_next_button.UseVisualStyleBackColor = false;
+            EnterName_next_button.Click += rjButton1_Click;
+            // 
+            // TextBox_EnterName
+            // 
+            TextBox_EnterName.BackColor = SystemColors.ActiveCaptionText;
+            TextBox_EnterName.Font = new Font("Chiller", 90F);
+            TextBox_EnterName.ForeColor = SystemColors.Window;
+            TextBox_EnterName.Location = new Point(656, 353);
+            TextBox_EnterName.MinimumSize = new Size(90, 25);
+            TextBox_EnterName.Name = "TextBox_EnterName";
+            TextBox_EnterName.Size = new Size(642, 146);
+            TextBox_EnterName.TabIndex = 0;
+            TextBox_EnterName.TextAlign = HorizontalAlignment.Center;
             // 
             // Game
             // 
@@ -80,18 +93,21 @@ namespace Undertale
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaptionText;
             ClientSize = new Size(1894, 1061);
-            Controls.Add(rjButton1);
-            Controls.Add(pictureBox1);
+            Controls.Add(TextBox_EnterName);
+            Controls.Add(EnterName_next_button);
+            Controls.Add(EnterName_pictureBox);
             Name = "Game";
             Text = "Game";
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)EnterName_pictureBox).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
-        public PictureBox pictureBox1;
+        public PictureBox EnterName_pictureBox;
         private System.Windows.Forms.Timer timer1;
-        private WindowsFormsApp1.RJButton rjButton1;
+        private WindowsFormsApp1.RJButton EnterName_next_button;
+        private TextBox TextBox_EnterName;
     }
 }

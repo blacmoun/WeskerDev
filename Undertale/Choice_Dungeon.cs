@@ -10,11 +10,13 @@ using System.Windows.Forms;
 
 namespace Undertale
 {
-    public partial class UserControl1 : UserControl
+    public partial class Choice_Dungeon : UserControl
     {
-        public UserControl1()
+        public Choice_Dungeon()
         {
             InitializeComponent();
         }
+        
+
     }
 }
