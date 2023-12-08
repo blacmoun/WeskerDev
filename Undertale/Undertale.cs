@@ -10,7 +10,7 @@ namespace Undertale
         {
 
             InitializeComponent();
-            player.SoundLocation= "C:\\Users\\pl23idy\\source\\repos\\WeskerDev3\\Undertale\\Resources\\Undertale-OST-012-Home.wav";
+            player.SoundLocation= "Resources/Undertale-OST-012-Home.wav";
             player.Play();
 
 

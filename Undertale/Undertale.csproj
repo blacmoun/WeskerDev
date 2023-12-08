@@ -29,4 +29,10 @@
     </Compile>
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="Resources\Undertale-OST-012-Home.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
