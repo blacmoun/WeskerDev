@@ -1,13 +1,19 @@
 using System.Drawing;
+using System.Media;
 
 namespace Undertale
 {
     public partial class Undertale : Form
     {
+    System.Media.SoundPlayer player = new System.Media.SoundPlayer();
         public Undertale()
         {
 
             InitializeComponent();
+            player.SoundLocation= "C:\\Users\\pl23idy\\source\\repos\\WeskerDev3\\Undertale\\Resources\\Undertale-OST-012-Home.wav";
+            player.Play();
+
+
         }
 
         private void QuitButton_Click(object sender, EventArgs e)
@@ -37,6 +43,9 @@ namespace Undertale
 
             // Affichez la nouvelle forme
             nouvelleForm.Show();
+
+            this.Visible = false;
+            player.Stop();
 
 
         }

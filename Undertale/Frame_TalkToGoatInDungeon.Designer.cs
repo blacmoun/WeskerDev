@@ -46,10 +46,11 @@
             Button_nextTalkToGoat.Location = new Point(1502, 869);
             Button_nextTalkToGoat.Name = "Button_nextTalkToGoat";
             Button_nextTalkToGoat.Size = new Size(315, 78);
-            Button_nextTalkToGoat.TabIndex = 1;
+            Button_nextTalkToGoat.TabIndex = 0;
             Button_nextTalkToGoat.Text = "Next";
             Button_nextTalkToGoat.TextColor = Color.White;
             Button_nextTalkToGoat.UseVisualStyleBackColor = false;
+            Button_nextTalkToGoat.Click += Button_nextTalkToGoat_Click;
             // 
             // Frame_TalkToGoatInDungeon
             // 
