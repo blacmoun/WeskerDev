@@ -12,10 +12,12 @@ namespace Undertale
 {
     public partial class Frame_TalkToGoatInDungeon : UserControl
     {
+
         public Frame_TalkToGoatInDungeon()
         {
             InitializeComponent();
         }
+
 
     }
 }

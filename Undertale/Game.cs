@@ -6,7 +6,6 @@ namespace Undertale
     public partial class Game : Form
     {
         public Choice_Dungeon userControl1;
-
         public Game()
         {
             InitializeComponent();

@@ -5,7 +5,7 @@
         /// <summary> 
         /// Required designer variable.
         /// </summary>
-        private System.ComponentModel.IContainer components = null;
+        public System.ComponentModel.IContainer components = null;
 
         /// <summary> 
         /// Clean up any resources being used.
@@ -26,7 +26,7 @@
         /// Required method for Designer support - do not modify 
         /// the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponent()
+        public void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Choice_Dungeon));
             ButtonEnterDungeon = new WindowsFormsApp1.RJButton();
@@ -51,6 +51,7 @@
             ButtonEnterDungeon.Text = "Entrer dans le donjon";
             ButtonEnterDungeon.TextColor = Color.White;
             ButtonEnterDungeon.UseVisualStyleBackColor = false;
+            ButtonEnterDungeon.Click += ButtonEnterDungeon_Click;
             // 
             // Button_exit_dungeon
             // 
@@ -87,7 +88,7 @@
 
         #endregion
 
-        private WindowsFormsApp1.RJButton ButtonEnterDungeon;
-        private WindowsFormsApp1.RJButton Button_exit_dungeon;
+        public WindowsFormsApp1.RJButton ButtonEnterDungeon;
+        public WindowsFormsApp1.RJButton Button_exit_dungeon;
     }
 }

@@ -86,8 +86,6 @@ namespace Undertale
             TextBox_EnterName.Size = new Size(642, 146);
             TextBox_EnterName.TabIndex = 0;
             TextBox_EnterName.TextAlign = HorizontalAlignment.Center;
-
-
             // 
             // Game
             // 
@@ -109,8 +107,7 @@ namespace Undertale
 
         public PictureBox EnterName_pictureBox;
         private System.Windows.Forms.Timer timer1;
-        private WindowsFormsApp1.RJButton EnterName_next_button;
-        private TextBox TextBox_EnterName;
-
+        public WindowsFormsApp1.RJButton EnterName_next_button;
+        public TextBox TextBox_EnterName;
     }
 }
