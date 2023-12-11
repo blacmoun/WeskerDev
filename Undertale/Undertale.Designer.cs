@@ -81,7 +81,6 @@
 
         #endregion
         public Button PlayButton;
-        public Button SettButton;
         public Button QuitButton;
     }
 }
