@@ -26,12 +26,11 @@
         ///  Required method for Designer support - do not modify
         ///  the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponent()
+        public void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Undertale));
             PlayButton = new Button();
             QuitButton = new Button();
-            SettButton = new Button();
             SuspendLayout();
             // 
             // PlayButton
@@ -41,13 +40,12 @@
             PlayButton.BackgroundImageLayout = ImageLayout.Stretch;
             PlayButton.Font = new Font("Forte", 27.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             PlayButton.ForeColor = SystemColors.ButtonFace;
-            PlayButton.Location = new Point(760, 367);
+            PlayButton.Location = new Point(760, 390);
             PlayButton.Name = "PlayButton";
             PlayButton.Size = new Size(369, 81);
             PlayButton.TabIndex = 0;
             PlayButton.Text = "Play";
             PlayButton.UseVisualStyleBackColor = false;
-            PlayButton.Click += PlayButton_Click;
             // 
             // QuitButton
             // 
@@ -55,28 +53,12 @@
             QuitButton.BackColor = SystemColors.ActiveCaptionText;
             QuitButton.Font = new Font("Forte", 27.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             QuitButton.ForeColor = SystemColors.ButtonFace;
-            QuitButton.Location = new Point(760, 546);
+            QuitButton.Location = new Point(760, 487);
             QuitButton.Name = "QuitButton";
             QuitButton.Size = new Size(369, 81);
             QuitButton.TabIndex = 1;
             QuitButton.Text = "Quit";
             QuitButton.UseVisualStyleBackColor = false;
-            QuitButton.Click += QuitButton_Click;
-            // 
-            // SettButton
-            // 
-            SettButton.Anchor = AnchorStyles.None;
-            SettButton.BackColor = SystemColors.ActiveCaptionText;
-            SettButton.BackgroundImageLayout = ImageLayout.Stretch;
-            SettButton.Font = new Font("Forte", 27.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            SettButton.ForeColor = SystemColors.ButtonFace;
-            SettButton.Location = new Point(760, 458);
-            SettButton.Name = "SettButton";
-            SettButton.Size = new Size(369, 81);
-            SettButton.TabIndex = 2;
-            SettButton.Text = "Settings";
-            SettButton.UseVisualStyleBackColor = false;
-            SettButton.Click += SettButton_Click;
             // 
             // Undertale
             // 
@@ -87,7 +69,6 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Zoom;
             ClientSize = new Size(1137, 639);
-            Controls.Add(SettButton);
             Controls.Add(QuitButton);
             Controls.Add(PlayButton);
             FormBorderStyle = FormBorderStyle.None;
@@ -99,8 +80,7 @@
         }
 
         #endregion
-        private Button QuitButton;
-        private Button SettButton;
         public Button PlayButton;
+        public Button QuitButton;
     }
 }

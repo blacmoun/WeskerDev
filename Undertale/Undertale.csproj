@@ -30,9 +30,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="Resources\82fabf.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
     <None Update="Resources\menu background.gif">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
