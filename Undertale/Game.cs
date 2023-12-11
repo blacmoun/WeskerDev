@@ -6,15 +6,15 @@ namespace Undertale
 {
     public partial class Game : Form
     {
-        public Choice_Dungeon userControl1;
+        public Intro userControl0;
 
         public Game()
         {
             InitializeComponent();
 
-            userControl1 = new Choice_Dungeon();
-            userControl1.Visible = false;
-            Controls.Add(userControl1);
+            userControl0 = new Intro();
+            userControl0.Visible = false;
+            Controls.Add(userControl0);
 
             TextBox_EnterName.Text = TextBox_EnterName.Text.ToUpper();
 
@@ -29,17 +29,16 @@ namespace Undertale
 
         public void ShowChoiceDungeon()
         {
-            userControl1.ChargerRessourcesSiNecessaire();  // Charge les ressources si ce n'est pas déjà fait
-            userControl1.Visible = true;
+            userControl0.Visible = true;
             EnterName_next_button.Visible = false;
             EnterName_pictureBox.Visible = false;
             TextBox_EnterName.Visible = false;
+            
         }
 
         public void EnterName_next_button_Click(object sender, EventArgs e)
         {
-            ShowChoiceDungeon();
-
+            
         }
 
         private void TextBox_EnterName_KeyDown(object sender, KeyEventArgs e)
