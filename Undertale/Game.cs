@@ -41,7 +41,10 @@ namespace Undertale
         public void EnterName_next_button_Click(object sender, EventArgs e)
         {
             ShowChoiceDungeon();
-
+            if (EnterName_next_button.DialogResult == DialogResult.OK)
+            {
+                Player.SendNickname(EnterName_next_button.Text);
+            }
         }
 
         private void TextBox_EnterName_KeyDown(object sender, KeyEventArgs e)

@@ -1,4 +1,4 @@
-﻿//using MySql.Data.MySqlClient;
+﻿using MySql.Data.MySqlClient;
 
 namespace Undertale
 {
@@ -19,14 +19,14 @@ namespace Undertale
             }
         }
 
-        public void SendNickname(string nickname)
+        public static void SendNickname(string nickname)
         {
             string connString = "server=localhost;user=admin;database=undertale;port=3306;password=admin;";
-            //MySqlConnection connection = new MySqlConnection(connString);
-            //connection.Open();
+            MySqlConnection connection = new MySqlConnection(connString);
+            connection.Open();
             String query = "INSERT INTO undertale.player (nickname) VALUES (" + nickname + ")";
-            //MySqlCommand cmd = new MySqlCommand(query, connection);
-            //cmd.ExecuteNonQuery();
+            MySqlCommand cmd = new MySqlCommand(query, connection);
+            cmd.ExecuteNonQuery();
         }
     }
 }
