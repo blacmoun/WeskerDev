@@ -1,4 +1,5 @@
-﻿using MySql.Data.MySqlClient;
+﻿
+using MySql.Data.MySqlClient;
 
 namespace Undertale
 {
@@ -24,7 +25,7 @@ namespace Undertale
             string connString = "server=localhost;user=admin;database=undertale;port=3306;password=admin;";
             MySqlConnection connection = new MySqlConnection(connString);
             connection.Open();
-            String query = "INSERT INTO undertale.player (nickname) VALUES (" + nickname + ")";
+            String query = "INSERT INTO undertale.player (nickname) VALUES (" + "'" + nickname + "'" + ")";
             MySqlCommand cmd = new MySqlCommand(query, connection);
             cmd.ExecuteNonQuery();
         }
