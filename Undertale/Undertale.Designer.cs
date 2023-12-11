@@ -99,9 +99,8 @@
         }
 
         #endregion
-
-        private Button PlayButton;
         private Button QuitButton;
         private Button SettButton;
+        public Button PlayButton;
     }
 }
