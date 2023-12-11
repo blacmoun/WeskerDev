@@ -12,8 +12,6 @@ namespace Undertale
             InitializeComponent();
             player.SoundLocation= "Resources/Undertale-OST-012-Home.wav";
             player.Play();
-
-
         }
 
         private void QuitButton_Click(object sender, EventArgs e)

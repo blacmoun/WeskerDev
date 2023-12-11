@@ -37,8 +37,8 @@
             // PlayButton
             // 
             PlayButton.Anchor = AnchorStyles.None;
-            PlayButton.BackColor = SystemColors.ActiveBorder;
-            PlayButton.BackgroundImage = (Image)resources.GetObject("PlayButton.BackgroundImage");
+            PlayButton.BackColor = SystemColors.ActiveCaptionText;
+            PlayButton.BackgroundImageLayout = ImageLayout.Stretch;
             PlayButton.Font = new Font("Forte", 27.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             PlayButton.ForeColor = SystemColors.ButtonFace;
             PlayButton.Location = new Point(760, 367);
@@ -46,14 +46,13 @@
             PlayButton.Size = new Size(369, 81);
             PlayButton.TabIndex = 0;
             PlayButton.Text = "Play";
-            PlayButton.UseVisualStyleBackColor = true;
+            PlayButton.UseVisualStyleBackColor = false;
             PlayButton.Click += PlayButton_Click;
             // 
             // QuitButton
             // 
             QuitButton.Anchor = AnchorStyles.None;
-            QuitButton.BackColor = SystemColors.ActiveBorder;
-            QuitButton.BackgroundImage = (Image)resources.GetObject("QuitButton.BackgroundImage");
+            QuitButton.BackColor = SystemColors.ActiveCaptionText;
             QuitButton.Font = new Font("Forte", 27.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             QuitButton.ForeColor = SystemColors.ButtonFace;
             QuitButton.Location = new Point(760, 546);
@@ -61,14 +60,14 @@
             QuitButton.Size = new Size(369, 81);
             QuitButton.TabIndex = 1;
             QuitButton.Text = "Quit";
-            QuitButton.UseVisualStyleBackColor = true;
+            QuitButton.UseVisualStyleBackColor = false;
             QuitButton.Click += QuitButton_Click;
             // 
             // SettButton
             // 
             SettButton.Anchor = AnchorStyles.None;
-            SettButton.BackColor = SystemColors.ActiveBorder;
-            SettButton.BackgroundImage = (Image)resources.GetObject("SettButton.BackgroundImage");
+            SettButton.BackColor = SystemColors.ActiveCaptionText;
+            SettButton.BackgroundImageLayout = ImageLayout.Stretch;
             SettButton.Font = new Font("Forte", 27.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             SettButton.ForeColor = SystemColors.ButtonFace;
             SettButton.Location = new Point(760, 458);
@@ -76,7 +75,7 @@
             SettButton.Size = new Size(369, 81);
             SettButton.TabIndex = 2;
             SettButton.Text = "Settings";
-            SettButton.UseVisualStyleBackColor = true;
+            SettButton.UseVisualStyleBackColor = false;
             SettButton.Click += SettButton_Click;
             // 
             // Undertale

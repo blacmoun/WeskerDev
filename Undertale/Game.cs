@@ -7,6 +7,7 @@ namespace Undertale
     public partial class Game : Form
     {
         public Choice_Dungeon userControl1;
+
         public Game()
         {
             InitializeComponent();
@@ -19,19 +20,16 @@ namespace Undertale
 
             EnterName_next_button.Enabled = !string.IsNullOrEmpty(TextBox_EnterName.Text);
             TextBox_EnterName.TextChanged += TextBox_EnterName_TextChanged;
-
-            
         }
 
         public void TextBox_EnterName_TextChanged(object sender, EventArgs e)
         {
-
             EnterName_next_button.Enabled = !string.IsNullOrEmpty(TextBox_EnterName.Text);
         }
 
-
-        private void ShowChoiceDungeon()
+        public void ShowChoiceDungeon()
         {
+            userControl1.ChargerRessourcesSiNecessaire();  // Charge les ressources si ce n'est pas déjà fait
             userControl1.Visible = true;
             EnterName_next_button.Visible = false;
             EnterName_pictureBox.Visible = false;
@@ -41,10 +39,7 @@ namespace Undertale
         public void EnterName_next_button_Click(object sender, EventArgs e)
         {
             ShowChoiceDungeon();
-            if (EnterName_next_button.DialogResult == DialogResult.OK)
-            {
-                Player.SendNickname(EnterName_next_button.Text);
-            }
+
         }
 
         private void TextBox_EnterName_KeyDown(object sender, KeyEventArgs e)
@@ -57,5 +52,7 @@ namespace Undertale
                 }
             }
         }
+
+
     }
 }

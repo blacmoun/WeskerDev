@@ -29,28 +29,49 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frame_TalkToGoatInDungeon));
-            Button_nextTalkToGoat = new WindowsFormsApp1.RJButton();
+            Button_ContinueTalkToGoat = new WindowsFormsApp1.RJButton();
+            Button_FollowTheGoat_TalkToGoat = new WindowsFormsApp1.RJButton();
             SuspendLayout();
             // 
-            // Button_nextTalkToGoat
+            // Button_ContinueTalkToGoat
             // 
-            Button_nextTalkToGoat.BackColor = Color.Transparent;
-            Button_nextTalkToGoat.BackgroundColor = Color.Transparent;
-            Button_nextTalkToGoat.BorderColor = Color.PaleVioletRed;
-            Button_nextTalkToGoat.BorderRadius = 40;
-            Button_nextTalkToGoat.BorderSize = 0;
-            Button_nextTalkToGoat.FlatAppearance.BorderSize = 0;
-            Button_nextTalkToGoat.FlatStyle = FlatStyle.Flat;
-            Button_nextTalkToGoat.Font = new Font("Segoe UI", 19F);
-            Button_nextTalkToGoat.ForeColor = Color.White;
-            Button_nextTalkToGoat.Location = new Point(1502, 869);
-            Button_nextTalkToGoat.Name = "Button_nextTalkToGoat";
-            Button_nextTalkToGoat.Size = new Size(315, 78);
-            Button_nextTalkToGoat.TabIndex = 0;
-            Button_nextTalkToGoat.Text = "Next";
-            Button_nextTalkToGoat.TextColor = Color.White;
-            Button_nextTalkToGoat.UseVisualStyleBackColor = false;
-            Button_nextTalkToGoat.Click += Button_nextTalkToGoat_Click;
+            Button_ContinueTalkToGoat.BackColor = Color.Transparent;
+            Button_ContinueTalkToGoat.BackgroundColor = Color.Transparent;
+            Button_ContinueTalkToGoat.BorderColor = Color.PaleVioletRed;
+            Button_ContinueTalkToGoat.BorderRadius = 40;
+            Button_ContinueTalkToGoat.BorderSize = 0;
+            Button_ContinueTalkToGoat.FlatAppearance.BorderSize = 0;
+            Button_ContinueTalkToGoat.FlatStyle = FlatStyle.Flat;
+            Button_ContinueTalkToGoat.Font = new Font("Segoe UI", 19F);
+            Button_ContinueTalkToGoat.ForeColor = Color.White;
+            Button_ContinueTalkToGoat.Location = new Point(1391, 411);
+            Button_ContinueTalkToGoat.Name = "Button_ContinueTalkToGoat";
+            Button_ContinueTalkToGoat.Size = new Size(315, 78);
+            Button_ContinueTalkToGoat.TabIndex = 0;
+            Button_ContinueTalkToGoat.Text = "Continuer seul";
+            Button_ContinueTalkToGoat.TextColor = Color.White;
+            Button_ContinueTalkToGoat.UseVisualStyleBackColor = false;
+            Button_ContinueTalkToGoat.Click += Button_ContinueTalkToGoat_Click;
+            // 
+            // Button_FollowTheGoat_TalkToGoat
+            // 
+            Button_FollowTheGoat_TalkToGoat.BackColor = Color.Transparent;
+            Button_FollowTheGoat_TalkToGoat.BackgroundColor = Color.Transparent;
+            Button_FollowTheGoat_TalkToGoat.BorderColor = Color.PaleVioletRed;
+            Button_FollowTheGoat_TalkToGoat.BorderRadius = 40;
+            Button_FollowTheGoat_TalkToGoat.BorderSize = 0;
+            Button_FollowTheGoat_TalkToGoat.FlatAppearance.BorderSize = 0;
+            Button_FollowTheGoat_TalkToGoat.FlatStyle = FlatStyle.Flat;
+            Button_FollowTheGoat_TalkToGoat.Font = new Font("Segoe UI", 19F);
+            Button_FollowTheGoat_TalkToGoat.ForeColor = Color.White;
+            Button_FollowTheGoat_TalkToGoat.Location = new Point(1391, 284);
+            Button_FollowTheGoat_TalkToGoat.Name = "Button_FollowTheGoat_TalkToGoat";
+            Button_FollowTheGoat_TalkToGoat.Size = new Size(315, 78);
+            Button_FollowTheGoat_TalkToGoat.TabIndex = 1;
+            Button_FollowTheGoat_TalkToGoat.Text = "Suivre la chèvre";
+            Button_FollowTheGoat_TalkToGoat.TextColor = Color.White;
+            Button_FollowTheGoat_TalkToGoat.UseVisualStyleBackColor = false;
+            Button_FollowTheGoat_TalkToGoat.Click += Button_FollowTheGoat_TalkToGoat_Click_1;
             // 
             // Frame_TalkToGoatInDungeon
             // 
@@ -58,7 +79,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
-            Controls.Add(Button_nextTalkToGoat);
+            Controls.Add(Button_FollowTheGoat_TalkToGoat);
+            Controls.Add(Button_ContinueTalkToGoat);
             Name = "Frame_TalkToGoatInDungeon";
             Size = new Size(1910, 1100);
             ResumeLayout(false);
@@ -66,6 +88,7 @@
 
         #endregion
 
-        public WindowsFormsApp1.RJButton Button_nextTalkToGoat;
+        public WindowsFormsApp1.RJButton Button_ContinueTalkToGoat;
+        public WindowsFormsApp1.RJButton Button_FollowTheGoat_TalkToGoat;
     }
 }
