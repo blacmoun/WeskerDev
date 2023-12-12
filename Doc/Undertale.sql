@@ -1,7 +1,7 @@
 -- --------------------------------------------------------
--- Hôte:                         127.0.0.1
--- Version du serveur:           8.0.34 - MySQL Community Server - GPL
--- SE du serveur:                Win64
+-- Host:                         127.0.0.1
+-- Server version:               8.0.34 - MySQL Community Server - GPL
+-- Server OS:                    Win64
 -- HeidiSQL Version:             12.6.0.6781
 -- --------------------------------------------------------
 
@@ -15,20 +15,25 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 
--- Listage de la structure de la base pour undertale
+-- Dumping database structure for undertale
 CREATE DATABASE IF NOT EXISTS `undertale` /*!40100 DEFAULT CHARACTER SET utf8mb3 */ /*!80016 DEFAULT ENCRYPTION='N' */;
 USE `undertale`;
 
--- Listage de la structure de table undertale. player
+-- Dumping structure for table undertale.player
 CREATE TABLE IF NOT EXISTS `player` (
   `id` int NOT NULL AUTO_INCREMENT,
   `nickname` varchar(100) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb3;
 
--- Listage des données de la table undertale.player : ~0 rows (environ)
+-- Dumping data for table undertale.player: ~4 rows (approximately)
+INSERT INTO `player` (`id`, `nickname`) VALUES
+	(1, 'Larcane'),
+	(2, 'Larcane'),
+	(3, 'Larcane'),
+	(4, 'LARCANE');
 
--- Listage de la structure de table undertale. scenario
+-- Dumping structure for table undertale.scenario
 CREATE TABLE IF NOT EXISTS `scenario` (
   `id` int NOT NULL AUTO_INCREMENT,
   `imagePlace` varchar(255) DEFAULT NULL,
@@ -37,9 +42,20 @@ CREATE TABLE IF NOT EXISTS `scenario` (
   `choice2Name` varchar(255) DEFAULT NULL,
   `choice3Name` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb3;
 
--- Listage des données de la table undertale.scenario : ~0 rows (environ)
+-- Dumping data for table undertale.scenario: ~10 rows (approximately)
+INSERT INTO `scenario` (`id`, `imagePlace`, `chapName`, `choice1Name`, `choice2Name`, `choice3Name`) VALUES
+	(1, '-', 'EnterName', 'Entrer dans le donjon', 'Sortir', '-'),
+	(2, '-', 'TalkToGoat', 'Suivre la chèvre', 'Continuer seul', NULL),
+	(3, '-', 'ContinueAlone', NULL, NULL, NULL),
+	(4, '-', 'FrontOfHouse', 'Aller devant la porte', NULL, NULL),
+	(5, '-', 'FrontOfDoor', 'Entrer dans la maison', NULL, NULL),
+	(6, '-', 'CandyHouse', 'Continuer d\'explorer', 'Fuir', NULL),
+	(7, '-', 'CandyKitchen', 'Aller au salon', 'Aller à la salle de bain', NULL),
+	(8, '-', 'CandyLivingRoom', NULL, NULL, NULL),
+	(9, '-', 'CandyBathroom', 'Aller dans la bibliotèque', 'Prendre un bain', NULL),
+	(10, '-', 'CandyLibrary', NULL, NULL, NULL);
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
