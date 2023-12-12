@@ -1,24 +1,51 @@
 using Org.BouncyCastle.Asn1.Crmf;
 using System;
 using System.Windows.Forms;
-using WindowsFormsApp1; // Assurez-vous d'ajuster le chemin vers votre espace de noms WindowsFormsApp1
-
+using WindowsFormsApp1;
+ 
 namespace Undertale
 {
-    internal static class Program
+    public static class Program
     {
+        public static Undertale undertaleForm;
+
         [STAThread]
-        static void Main()
+        public static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Undertale undertaleForm = new Undertale();
-            undertaleForm.PlayButton.Click += (sender, e) => PlayButton_Click(undertaleForm);
-            undertaleForm.QuitButton.Click += (sender, e) => QuitButton_Click(undertaleForm);
+
+            undertaleForm = new Undertale();
+
+            undertaleForm.PlayButton.Click += (sender, e) => PlayButton_Click();
+            undertaleForm.QuitButton.Click += (sender, e) => QuitButton_Click();
+
             Application.Run(undertaleForm);
         }
 
-        private static void EnterName_next_button_Click(Game gameForm)
+        public static void PlayButton_Click()
+        {
+            Game gameForm = new Game();
+            gameForm.EnterName_next_button.Click += (sender, e) => EnterName_next_button_Click(gameForm);
+            gameForm.Show();
+        }
+
+        public static void QuitButton_Click()
+        {
+            Application.Exit();
+        }
+
+        public static void ShowIntro()
+        {
+            Intro userControl0 = new Intro();
+
+            undertaleForm.Controls.Clear();
+            undertaleForm.Controls.Add(userControl0);
+            userControl0.Dock = DockStyle.Fill;
+            userControl0.Show();
+        }
+
+        public static void EnterName_next_button_Click(Game gameForm)
         {
             string enteredName = gameForm.TextBox_EnterName.Text.Trim();
             Player.SendNickname(enteredName);
@@ -26,22 +53,6 @@ namespace Undertale
             gameForm.EnterName_pictureBox.Visible = false;
             gameForm.TextBox_EnterName.Visible = false;
             ShowIntro();
-        }
-
-        private static void PlayButton_Click(Undertale undertaleForm)
-        {
-            Game gameForm = new Game();
-            gameForm.EnterName_next_button.Click += (sender, e) => EnterName_next_button_Click(gameForm);
-            gameForm.Show();
-        }
-        private static void QuitButton_Click(Undertale undertaleForm)
-        {
-            Application.Exit();
-        }
-        public static void ShowIntro()
-        {
-            Intro intro = new Intro();
-            intro.Show();
         }
     }
 }
