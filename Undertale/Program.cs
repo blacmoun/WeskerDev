@@ -21,7 +21,7 @@ namespace Undertale
         private static void EnterName_next_button_Click(Game gameForm)
         {
             string enteredName = gameForm.TextBox_EnterName.Text.Trim();
-            Player.SendNickname(enteredName);
+          /*  Player.SendNickname(enteredName);*/
             gameForm.ShowChoiceDungeon();
         }
 

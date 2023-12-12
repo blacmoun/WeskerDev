@@ -8,7 +8,6 @@ namespace Undertale
     {
         public Frame_TalkToGoatInDungeon userControl2;
 
-        private bool estCharge = false;
 
         public Choice_Dungeon()
         {
@@ -18,21 +17,6 @@ namespace Undertale
             Controls.Add(userControl2);
         }
 
-        public async void ChargerRessourcesSiNecessaire()
-        {
-            if (!estCharge)
-            {
-                // Code de chargement des ressources (exécuté de manière asynchrone)
-                await Task.Run(() =>
-                {
-                    // Mettez ici le code pour charger les ressources nécessaires
-                    // Remplacez ce commentaire par le code réel
-                    System.Threading.Thread.Sleep(5000);  // Exemple de chargement synchrone (remplacez cela par votre propre logique)
-                });
-
-                estCharge = true;
-            }
-        }
 
         private void Button_exit_dungeon_Click(object sender, EventArgs e)
         {
@@ -45,7 +29,6 @@ namespace Undertale
 
         private void ButtonEnterDungeon_Click(object sender, EventArgs e)
         {
-            ChargerRessourcesSiNecessaire();
 
             Game parentForm = this.FindForm() as Game;
             if (parentForm != null)

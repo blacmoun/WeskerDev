@@ -19,7 +19,7 @@ namespace Undertale
                 return _nickname;
             }
         }
-
+        /*
         public static void SendNickname(string nickname)
         {
             string connString = "server=localhost;user=admin;database=undertale;port=3306;password=admin;";
@@ -28,6 +28,6 @@ namespace Undertale
             String query = "INSERT INTO undertale.player (nickname) VALUES (" + "'" + nickname + "'" + ")";
             MySqlCommand cmd = new MySqlCommand(query, connection);
             cmd.ExecuteNonQuery();
-        }
+        }*/
     }
 }
