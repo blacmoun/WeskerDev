@@ -1,21 +1,39 @@
-﻿namespace Undertale
-{
-    public class TestPlayer
-    {
-        private Player _expectedPlayer;
-        private string _expectedname;
+﻿using NUnit.Framework;
+using MySql.Data.MySqlClient;
 
-        [SetUp]
-        public void Setup()
-        {
-            _expectedname = "Undetale";
-            _expectedPlayer = new Player(_expectedname);
-        }
+namespace Undertale
+{
+    [TestFixture]
+    public class PlayerTests
+    {
+        private string connString = "server=localhost;user=admin;database=undertale;port=3306;password=admin;";
 
         [Test]
-        public void AllProperties_JustAfterInstantiation_GetValues()
+        public void SendNickname_AddsToDatabase_Success()
         {
-            Assert.That(_expectedname, Is.EqualTo(_expectedPlayer.Name));
+            // Arrange
+            string nicknameToAdd = "TestNickname";
+            Player.SendNickname(nicknameToAdd);
+
+            // Act
+            bool isNicknameAdded = CheckIfNicknameExistsInDatabase(nicknameToAdd);
+
+            // Assert
+            Assert.That(isNicknameAdded, Is.True, $"Nickname '{nicknameToAdd}' was not added to the database.");
+        }
+
+        private bool CheckIfNicknameExistsInDatabase(string nickname)
+        {
+            using (MySqlConnection connection = new MySqlConnection(connString))
+            {
+                connection.Open();
+                string query = "SELECT COUNT(*) FROM undertale.player WHERE nickname = @nickname";
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+                cmd.Parameters.AddWithValue("@nickname", nickname);
+
+                int count = Convert.ToInt32(cmd.ExecuteScalar());
+                return count > 0;
+            }
         }
     }
 }
