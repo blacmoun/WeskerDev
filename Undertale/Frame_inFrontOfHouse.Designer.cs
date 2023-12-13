@@ -43,7 +43,7 @@
             ButtonEnterDungeon.FlatStyle = FlatStyle.Flat;
             ButtonEnterDungeon.Font = new Font("Segoe UI", 19F);
             ButtonEnterDungeon.ForeColor = Color.White;
-            ButtonEnterDungeon.Location = new Point(1554, 997);
+            ButtonEnterDungeon.Location = new Point(1539, 913);
             ButtonEnterDungeon.Name = "ButtonEnterDungeon";
             ButtonEnterDungeon.Size = new Size(315, 78);
             ButtonEnterDungeon.TabIndex = 1;

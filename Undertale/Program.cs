@@ -26,6 +26,8 @@ namespace Undertale
         public static void PlayButton_Click()
         {
             Game gameForm = new Game();
+            gameForm.WindowState = FormWindowState.Maximized;
+
             gameForm.EnterName_next_button.Click += (sender, e) => EnterName_next_button_Click(gameForm);
             gameForm.Show();
         }
@@ -38,6 +40,8 @@ namespace Undertale
         public static void ShowIntro()
         {
             Game gameForm = new Game();
+            gameForm.WindowState = FormWindowState.Maximized;
+
             Intro userControl0 = new Intro();
             gameForm.Controls.Clear();
             gameForm.Controls.Add(userControl0);
