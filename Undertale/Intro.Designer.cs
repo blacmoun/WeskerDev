@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Intro));
             pictureBox1 = new PictureBox();
+            button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -44,11 +45,24 @@
             pictureBox1.TabStop = false;
             pictureBox1.Click += pictureBox1_Click;
             // 
+            // button1
+            // 
+            button1.BackColor = SystemColors.ActiveCaptionText;
+            button1.Font = new Font("Segoe UI", 1F);
+            button1.Location = new Point(1524, 918);
+            button1.Name = "button1";
+            button1.Size = new Size(224, 85);
+            button1.TabIndex = 0;
+            button1.Text = "button1";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
+            // 
             // Intro
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImageLayout = ImageLayout.Stretch;
+            Controls.Add(button1);
             Controls.Add(pictureBox1);
             DoubleBuffered = true;
             Name = "Intro";
@@ -60,5 +74,6 @@
         #endregion
 
         private PictureBox pictureBox1;
+        public Button button1;
     }
 }

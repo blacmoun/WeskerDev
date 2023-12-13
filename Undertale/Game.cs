@@ -41,11 +41,11 @@ namespace Undertale
             
         }
 
-        private void TextBox_EnterName_KeyDown(object sender, KeyEventArgs e)
+        public void TextBox_EnterName_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
             {
-                if (!string.IsNullOrEmpty(TextBox_EnterName.Text.Trim()))  // Vérifie si le texte n'est pas vide (après suppression des espaces)
+                if (!string.IsNullOrEmpty(TextBox_EnterName.Text.Trim()))  
                 {
                     ShowChoiceDungeon();
                 }

@@ -54,5 +54,7 @@ namespace Undertale
             gameForm.Close();
             ShowIntro();
         }
+
+
     }
 }

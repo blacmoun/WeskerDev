@@ -48,21 +48,19 @@ namespace Undertale
                     }
                 }));
             }
-
-
-
         }
-
 
         private void pictureBox1_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
             {
-                SkipIntro();              
+                SkipIntro();
             }
         }
 
-
-
+        private void button1_Click(object sender, EventArgs e)
+        {                 
+               SkipIntro();          
+        }
     }
 }
