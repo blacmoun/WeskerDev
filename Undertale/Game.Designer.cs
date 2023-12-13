@@ -74,7 +74,6 @@ namespace Undertale
             EnterName_next_button.Text = "Suivant";
             EnterName_next_button.TextColor = Color.White;
             EnterName_next_button.UseVisualStyleBackColor = false;
-            EnterName_next_button.Click += EnterName_next_button_Click;
             // 
             // TextBox_EnterName
             // 
@@ -87,7 +86,6 @@ namespace Undertale
             TextBox_EnterName.Size = new Size(642, 146);
             TextBox_EnterName.TabIndex = 1;
             TextBox_EnterName.TextAlign = HorizontalAlignment.Center;
-            TextBox_EnterName.KeyDown += TextBox_EnterName_KeyDown;
             // 
             // Game
             // 

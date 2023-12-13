@@ -37,12 +37,11 @@ namespace Undertale
 
         public static void ShowIntro()
         {
+            Game gameForm = new Game();
             Intro userControl0 = new Intro();
-
-            undertaleForm.Controls.Clear();
-            undertaleForm.Controls.Add(userControl0);
-            userControl0.Dock = DockStyle.Fill;
-            userControl0.Show();
+            gameForm.Controls.Clear();
+            gameForm.Controls.Add(userControl0);
+            gameForm.Visible = true;
         }
 
         public static void EnterName_next_button_Click(Game gameForm)
@@ -52,6 +51,7 @@ namespace Undertale
             gameForm.EnterName_next_button.Visible = false;
             gameForm.EnterName_pictureBox.Visible = false;
             gameForm.TextBox_EnterName.Visible = false;
+            gameForm.Close();
             ShowIntro();
         }
     }
