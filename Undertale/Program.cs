@@ -39,10 +39,9 @@ namespace Undertale
         {
             Intro userControl0 = new Intro();
 
-            undertaleForm.Controls.Clear();
             undertaleForm.Controls.Add(userControl0);
-            userControl0.Dock = DockStyle.Fill;
             userControl0.Show();
+
         }
 
         public static void EnterName_next_button_Click(Game gameForm)
@@ -54,5 +53,7 @@ namespace Undertale
             gameForm.TextBox_EnterName.Visible = false;
             ShowIntro();
         }
+
+
     }
 }
