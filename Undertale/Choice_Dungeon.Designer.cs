@@ -31,6 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Choice_Dungeon));
             ButtonEnterDungeon = new WindowsFormsApp1.RJButton();
             Button_exit_dungeon = new WindowsFormsApp1.RJButton();
+            Script_ChoiceDungeon = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)Script_ChoiceDungeon).BeginInit();
             SuspendLayout();
             // 
             // ButtonEnterDungeon
@@ -73,16 +75,29 @@
             Button_exit_dungeon.UseVisualStyleBackColor = false;
             Button_exit_dungeon.Click += Button_exit_dungeon_Click;
             // 
+            // Script_ChoiceDungeon
+            // 
+            Script_ChoiceDungeon.BackgroundImageLayout = ImageLayout.Stretch;
+            Script_ChoiceDungeon.Image = (Image)resources.GetObject("Script_ChoiceDungeon.Image");
+            Script_ChoiceDungeon.Location = new Point(500, 14);
+            Script_ChoiceDungeon.Name = "Script_ChoiceDungeon";
+            Script_ChoiceDungeon.Size = new Size(877, 233);
+            Script_ChoiceDungeon.SizeMode = PictureBoxSizeMode.StretchImage;
+            Script_ChoiceDungeon.TabIndex = 2;
+            Script_ChoiceDungeon.TabStop = false;
+            // 
             // Choice_Dungeon
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
+            Controls.Add(Script_ChoiceDungeon);
             Controls.Add(Button_exit_dungeon);
             Controls.Add(ButtonEnterDungeon);
             Name = "Choice_Dungeon";
             Size = new Size(1910, 1100);
+            ((System.ComponentModel.ISupportInitialize)Script_ChoiceDungeon).EndInit();
             ResumeLayout(false);
         }
 
@@ -90,5 +105,6 @@
 
         public WindowsFormsApp1.RJButton ButtonEnterDungeon;
         public WindowsFormsApp1.RJButton Button_exit_dungeon;
+        public PictureBox Script_ChoiceDungeon;
     }
 }

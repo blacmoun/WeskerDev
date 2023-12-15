@@ -36,7 +36,9 @@ namespace Undertale
             timer1 = new System.Windows.Forms.Timer(components);
             EnterName_next_button = new WindowsFormsApp1.RJButton();
             TextBox_EnterName = new TextBox();
+            EnterName_pictureBox_Static = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)EnterName_pictureBox).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)EnterName_pictureBox_Static).BeginInit();
             SuspendLayout();
             // 
             // EnterName_pictureBox
@@ -87,18 +89,32 @@ namespace Undertale
             TextBox_EnterName.TabIndex = 1;
             TextBox_EnterName.TextAlign = HorizontalAlignment.Center;
             // 
+            // EnterName_pictureBox_Static
+            // 
+            EnterName_pictureBox_Static.BackgroundImage = (Image)resources.GetObject("EnterName_pictureBox_Static.BackgroundImage");
+            EnterName_pictureBox_Static.BackgroundImageLayout = ImageLayout.Center;
+            EnterName_pictureBox_Static.Image = (Image)resources.GetObject("EnterName_pictureBox_Static.Image");
+            EnterName_pictureBox_Static.Location = new Point(531, 29);
+            EnterName_pictureBox_Static.Name = "EnterName_pictureBox_Static";
+            EnterName_pictureBox_Static.Size = new Size(872, 234);
+            EnterName_pictureBox_Static.SizeMode = PictureBoxSizeMode.CenterImage;
+            EnterName_pictureBox_Static.TabIndex = 2;
+            EnterName_pictureBox_Static.TabStop = false;
+            // 
             // Game
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaptionText;
             ClientSize = new Size(1894, 1061);
+            Controls.Add(EnterName_pictureBox_Static);
             Controls.Add(TextBox_EnterName);
             Controls.Add(EnterName_next_button);
             Controls.Add(EnterName_pictureBox);
             Name = "Game";
             Text = "Game";
             ((System.ComponentModel.ISupportInitialize)EnterName_pictureBox).EndInit();
+            ((System.ComponentModel.ISupportInitialize)EnterName_pictureBox_Static).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -109,5 +125,6 @@ namespace Undertale
         private System.Windows.Forms.Timer timer1;
         public WindowsFormsApp1.RJButton EnterName_next_button;
         public TextBox TextBox_EnterName;
+        public PictureBox EnterName_pictureBox_Static;
     }
 }

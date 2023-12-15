@@ -15,6 +15,11 @@ namespace Undertale
             userControl0 = new Intro();
             userControl0.Visible = false;
             Controls.Add(userControl0);
+            EnterName_pictureBox_Static.Visible = false;
+
+            timer1.Interval = 3000;
+            timer1.Start();
+            timer1.Tick += timer1_Tick;
 
             TextBox_EnterName.Text = TextBox_EnterName.Text.ToUpper();
 
@@ -33,25 +38,30 @@ namespace Undertale
             EnterName_next_button.Visible = false;
             EnterName_pictureBox.Visible = false;
             TextBox_EnterName.Visible = false;
-            
+
         }
 
         public void EnterName_next_button_Click(object sender, EventArgs e)
         {
-            
         }
 
-        public void TextBox_EnterName_KeyDown(object sender, KeyEventArgs e)
+        private void TextBox_EnterName_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
             {
-                if (!string.IsNullOrEmpty(TextBox_EnterName.Text.Trim()))  
+                if (!string.IsNullOrEmpty(TextBox_EnterName.Text.Trim()))
                 {
                     ShowChoiceDungeon();
                 }
             }
         }
 
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            EnterName_pictureBox.Visible = false;
+            EnterName_pictureBox_Static.Visible = true;
+            timer1.Stop();
 
+        }
     }
 }

@@ -40,6 +40,7 @@ namespace Undertale
                     parentForm.TextBox_EnterName.Visible = false;
                     ButtonEnterDungeon.Visible = false;
                     Button_exit_dungeon.Visible = false;
+                    Script_ChoiceDungeon.Visible = false;
 
                 }));
             }

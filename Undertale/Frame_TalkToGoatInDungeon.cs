@@ -26,6 +26,7 @@ namespace Undertale
             userControl4 = new Frame_ContinueAlone();
             userControl4.Visible = false;
             Controls.Add(userControl4);
+            
 
         }
 
@@ -46,6 +47,7 @@ namespace Undertale
             {
                 userControl3.Visible = true;
                 secondForm.userControl2.Visible = false;
+                secondForm.Script_ChoiceDungeon.Visible = false;
 
                 secondForm.ButtonEnterDungeon.Visible = false;
                 secondForm.Button_exit_dungeon.Visible = false;
@@ -73,6 +75,8 @@ namespace Undertale
                 userControl3.Visible = false;
                 userControl4.Visible = true;
                 secondForm.userControl2.Visible = false;
+                secondForm.Script_ChoiceDungeon.Visible = false;
+
 
                 secondForm.ButtonEnterDungeon.Visible = false;
                 secondForm.Button_exit_dungeon.Visible = false;
