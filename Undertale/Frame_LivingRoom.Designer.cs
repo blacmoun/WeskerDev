@@ -29,7 +29,28 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frame_LivingRoom));
+            Button_ToKitchenFromLivingRoom = new WindowsFormsApp1.RJButton();
             SuspendLayout();
+            // 
+            // Button_ToKitchenFromLivingRoom
+            // 
+            Button_ToKitchenFromLivingRoom.BackColor = Color.Transparent;
+            Button_ToKitchenFromLivingRoom.BackgroundColor = Color.Transparent;
+            Button_ToKitchenFromLivingRoom.BorderColor = Color.PaleVioletRed;
+            Button_ToKitchenFromLivingRoom.BorderRadius = 40;
+            Button_ToKitchenFromLivingRoom.BorderSize = 0;
+            Button_ToKitchenFromLivingRoom.FlatAppearance.BorderSize = 0;
+            Button_ToKitchenFromLivingRoom.FlatStyle = FlatStyle.Flat;
+            Button_ToKitchenFromLivingRoom.Font = new Font("Segoe UI", 19F);
+            Button_ToKitchenFromLivingRoom.ForeColor = Color.White;
+            Button_ToKitchenFromLivingRoom.Location = new Point(1249, 372);
+            Button_ToKitchenFromLivingRoom.Name = "Button_ToKitchenFromLivingRoom";
+            Button_ToKitchenFromLivingRoom.Size = new Size(315, 78);
+            Button_ToKitchenFromLivingRoom.TabIndex = 3;
+            Button_ToKitchenFromLivingRoom.Text = "Aller dans la cuisine";
+            Button_ToKitchenFromLivingRoom.TextColor = Color.White;
+            Button_ToKitchenFromLivingRoom.UseVisualStyleBackColor = false;
+            Button_ToKitchenFromLivingRoom.Click += ButtonEnter_InFrontOfTheDoor_Click;
             // 
             // Frame_LivingRoom
             // 
@@ -37,11 +58,14 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
+            Controls.Add(Button_ToKitchenFromLivingRoom);
             Name = "Frame_LivingRoom";
             Size = new Size(1910, 1100);
             ResumeLayout(false);
         }
 
         #endregion
+
+        public WindowsFormsApp1.RJButton Button_ToKitchenFromLivingRoom;
     }
 }
