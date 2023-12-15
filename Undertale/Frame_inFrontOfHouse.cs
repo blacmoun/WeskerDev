@@ -58,15 +58,12 @@ namespace Undertale
                     userControl4.Visible = true;
                     parentForm.EnterName_pictureBox.Visible = false;
                     parentForm.TextBox_EnterName.Visible = false;
-                    ButtonEnterDungeon.Visible = false;
+                    ButtonGoToDoor.Visible = false;
                     secondForm.Button_exit_dungeon.Visible = false;
 
-                    if (!userControl4.Visible)
-                    {
-                        MessageBox.Show("Erreur : userControl2 ne s'affiche pas correctement.", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
                 }));
             }
+
 
 
 

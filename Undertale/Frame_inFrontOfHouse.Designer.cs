@@ -29,28 +29,28 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frame_inFrontOfHouse));
-            ButtonEnterDungeon = new WindowsFormsApp1.RJButton();
+            ButtonGoToDoor = new WindowsFormsApp1.RJButton();
             SuspendLayout();
             // 
-            // ButtonEnterDungeon
+            // ButtonGoToDoor
             // 
-            ButtonEnterDungeon.BackColor = Color.Transparent;
-            ButtonEnterDungeon.BackgroundColor = Color.Transparent;
-            ButtonEnterDungeon.BorderColor = Color.PaleVioletRed;
-            ButtonEnterDungeon.BorderRadius = 40;
-            ButtonEnterDungeon.BorderSize = 0;
-            ButtonEnterDungeon.FlatAppearance.BorderSize = 0;
-            ButtonEnterDungeon.FlatStyle = FlatStyle.Flat;
-            ButtonEnterDungeon.Font = new Font("Segoe UI", 19F);
-            ButtonEnterDungeon.ForeColor = Color.White;
-            ButtonEnterDungeon.Location = new Point(1539, 913);
-            ButtonEnterDungeon.Name = "ButtonEnterDungeon";
-            ButtonEnterDungeon.Size = new Size(315, 78);
-            ButtonEnterDungeon.TabIndex = 1;
-            ButtonEnterDungeon.Text = "Suivant";
-            ButtonEnterDungeon.TextColor = Color.White;
-            ButtonEnterDungeon.UseVisualStyleBackColor = false;
-            ButtonEnterDungeon.Click += ButtonEnterDungeon_Click;
+            ButtonGoToDoor.BackColor = Color.Transparent;
+            ButtonGoToDoor.BackgroundColor = Color.Transparent;
+            ButtonGoToDoor.BorderColor = Color.PaleVioletRed;
+            ButtonGoToDoor.BorderRadius = 40;
+            ButtonGoToDoor.BorderSize = 0;
+            ButtonGoToDoor.FlatAppearance.BorderSize = 0;
+            ButtonGoToDoor.FlatStyle = FlatStyle.Flat;
+            ButtonGoToDoor.Font = new Font("Segoe UI", 19F);
+            ButtonGoToDoor.ForeColor = Color.White;
+            ButtonGoToDoor.Location = new Point(1539, 913);
+            ButtonGoToDoor.Name = "ButtonGoToDoor";
+            ButtonGoToDoor.Size = new Size(315, 78);
+            ButtonGoToDoor.TabIndex = 1;
+            ButtonGoToDoor.Text = "Suivant";
+            ButtonGoToDoor.TextColor = Color.White;
+            ButtonGoToDoor.UseVisualStyleBackColor = false;
+            ButtonGoToDoor.Click += ButtonEnterDungeon_Click;
             // 
             // Frame_inFrontOfHouse
             // 
@@ -58,7 +58,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
-            Controls.Add(ButtonEnterDungeon);
+            Controls.Add(ButtonGoToDoor);
             Name = "Frame_inFrontOfHouse";
             Size = new Size(1910, 1100);
             ResumeLayout(false);
@@ -66,6 +66,6 @@
 
         #endregion
 
-        public WindowsFormsApp1.RJButton ButtonEnterDungeon;
+        public WindowsFormsApp1.RJButton ButtonGoToDoor;
     }
 }

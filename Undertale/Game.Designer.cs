@@ -44,7 +44,7 @@ namespace Undertale
             EnterName_pictureBox.BackgroundImage = (Image)resources.GetObject("EnterName_pictureBox.BackgroundImage");
             EnterName_pictureBox.BackgroundImageLayout = ImageLayout.Center;
             EnterName_pictureBox.Image = (Image)resources.GetObject("EnterName_pictureBox.Image");
-            EnterName_pictureBox.Location = new Point(335, 34);
+            EnterName_pictureBox.Location = new Point(531, 29);
             EnterName_pictureBox.Name = "EnterName_pictureBox";
             EnterName_pictureBox.Size = new Size(872, 234);
             EnterName_pictureBox.SizeMode = PictureBoxSizeMode.CenterImage;
