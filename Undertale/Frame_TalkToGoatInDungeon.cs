@@ -26,11 +26,6 @@ namespace Undertale
             userControl4 = new Frame_ContinueAlone();
             userControl4.Visible = false;
             Controls.Add(userControl4);
-
-
-
-
-
         }
 
 
@@ -93,5 +88,13 @@ namespace Undertale
 
             }
         }
+
+        public void Timer_FriskTalkToGoat_Tick(object sender, EventArgs e)
+        {
+            Script_talktoGoat.Visible = false;
+            Timer_FriskTalkToGoat.Stop();
+        }
+
+
     }
 }

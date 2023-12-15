@@ -2,10 +2,6 @@
 {
     partial class Frame_TalkToGoatInDungeon
     {
-        /// <summary> 
-        /// Required designer variable.
-        /// </summary>
-        public System.ComponentModel.IContainer components = null;
 
         /// <summary> 
         /// Clean up any resources being used.
@@ -28,9 +24,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frame_TalkToGoatInDungeon));
             Button_ContinueTalkToGoat = new WindowsFormsApp1.RJButton();
             Button_FollowTheGoat_TalkToGoat = new WindowsFormsApp1.RJButton();
+            Script_FriskTalkToGoat_STATIC = new PictureBox();
+            Script_talktoGoat = new PictureBox();
+            Timer_FriskTalkToGoat = new System.Windows.Forms.Timer(components);
+            ((System.ComponentModel.ISupportInitialize)Script_FriskTalkToGoat_STATIC).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)Script_talktoGoat).BeginInit();
             SuspendLayout();
             // 
             // Button_ContinueTalkToGoat
@@ -73,16 +75,46 @@
             Button_FollowTheGoat_TalkToGoat.UseVisualStyleBackColor = false;
             Button_FollowTheGoat_TalkToGoat.Click += Button_FollowTheGoat_TalkToGoat_Click_1;
             // 
+            // Script_FriskTalkToGoat_STATIC
+            // 
+            Script_FriskTalkToGoat_STATIC.BackgroundImageLayout = ImageLayout.Stretch;
+            Script_FriskTalkToGoat_STATIC.Image = (Image)resources.GetObject("Script_FriskTalkToGoat_STATIC.Image");
+            Script_FriskTalkToGoat_STATIC.Location = new Point(503, 24);
+            Script_FriskTalkToGoat_STATIC.Name = "Script_FriskTalkToGoat_STATIC";
+            Script_FriskTalkToGoat_STATIC.Size = new Size(877, 233);
+            Script_FriskTalkToGoat_STATIC.SizeMode = PictureBoxSizeMode.StretchImage;
+            Script_FriskTalkToGoat_STATIC.TabIndex = 3;
+            Script_FriskTalkToGoat_STATIC.TabStop = false;
+            // 
+            // Script_talktoGoat
+            // 
+            Script_talktoGoat.BackgroundImageLayout = ImageLayout.Stretch;
+            Script_talktoGoat.Image = (Image)resources.GetObject("Script_talktoGoat.Image");
+            Script_talktoGoat.Location = new Point(503, 24);
+            Script_talktoGoat.Name = "Script_talktoGoat";
+            Script_talktoGoat.Size = new Size(877, 233);
+            Script_talktoGoat.SizeMode = PictureBoxSizeMode.StretchImage;
+            Script_talktoGoat.TabIndex = 4;
+            Script_talktoGoat.TabStop = false;
+            // 
+            // Timer_FriskTalkToGoat
+            // 
+            Timer_FriskTalkToGoat.Tick += Timer_FriskTalkToGoat_Tick;
+            // 
             // Frame_TalkToGoatInDungeon
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
+            Controls.Add(Script_talktoGoat);
             Controls.Add(Button_FollowTheGoat_TalkToGoat);
             Controls.Add(Button_ContinueTalkToGoat);
+            Controls.Add(Script_FriskTalkToGoat_STATIC);
             Name = "Frame_TalkToGoatInDungeon";
             Size = new Size(1910, 1100);
+            ((System.ComponentModel.ISupportInitialize)Script_FriskTalkToGoat_STATIC).EndInit();
+            ((System.ComponentModel.ISupportInitialize)Script_talktoGoat).EndInit();
             ResumeLayout(false);
         }
 
@@ -90,5 +122,9 @@
 
         public WindowsFormsApp1.RJButton Button_ContinueTalkToGoat;
         public WindowsFormsApp1.RJButton Button_FollowTheGoat_TalkToGoat;
+        public PictureBox Script_FriskTalkToGoat_STATIC;
+        public PictureBox Script_talktoGoat;
+        private System.Windows.Forms.Timer Timer_FriskTalkToGoat;
+        private System.ComponentModel.IContainer components;
     }
 }
