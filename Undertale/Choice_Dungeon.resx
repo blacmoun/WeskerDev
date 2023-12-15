@@ -3164,7 +3164,7 @@
   <data name="Script_superEndroitSTATIC.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAkMAAACUCAIAAAAf/7pyAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wAAADsABataJCQAALWlJREFUeF7tnYt22zYTbtM09+Yd/vd/u9PTJL4kbc4mNj2HlQhVcChbkr+9uLCG
+        vAAADrwBlbxySQAALWlJREFUeF7tnYt22zYTbtM09+Yd/vd/u9PTJL4kbc4mNj2HlQhVcChbkr+9uLCG
         g8FgAIIYUpbtV//8/Pvu++3fP39w3N7fUP7T+LvDj3++58iRI0eOHJsfc5rZ40fj58+flJze3d2pl//9
         73+vvv99z0E+wwslmQyj+/v72WSPZa85cuTIkSPHVsecZvaoHGY+412LsvLUnMnmBPb9FsFXtEnTYafj
         HDly5MiRY5NjTjN78H51e3tL9qIkjSnPdWYyctj9j7tKYN9uvyrPJnvsdJwjR44cOXJscsxpZg/fw8B3
@@ -3361,8 +3361,11 @@
         ryg4HJAc2wAAAABJRU5ErkJggg==
 </value>
   </data>
-  <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <metadata name="timer_Choice_dungeon.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>100</value>
   </metadata>
   <data name="$this.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

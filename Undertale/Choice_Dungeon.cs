@@ -15,16 +15,14 @@ namespace Undertale
             userControl2 = new Frame_TalkToGoatInDungeon();
             userControl2.Visible = false;
             Controls.Add(userControl2);
+            Script_superEndroitSTATIC.Visible = true;
 
             usercontrolCredit = new credit();
             usercontrolCredit.Visible = false;
             Controls.Add(usercontrolCredit);
 
-            Script_superEndroitSTATIC.Visible = false;
 
-            timer1.Interval = 4000;
-            timer1.Start();
-            timer1.Tick += timer1_Tick;
+
         }
 
 
@@ -36,7 +34,7 @@ namespace Undertale
                 parentForm.Invoke(new Action(() =>
                 {
                     usercontrolCredit.Visible = true;
-                    timer1.Enabled = false;
+                    timer_Choice_dungeon.Enabled = false;
                     userControl2.Visible = false;
                     parentForm.EnterName_pictureBox.Visible = false;
                     parentForm.TextBox_EnterName.Visible = false;
@@ -75,6 +73,9 @@ namespace Undertale
             {
                 parentForm.Invoke(new Action(() =>
                 {
+                    Script_superEndroitSTATIC.Enabled = false;
+                    Script_superEndroitSTATIC.Visible = false;
+
                     userControl2.Visible = true;
                     parentForm.EnterName_pictureBox.Visible = false;
                     parentForm.TextBox_EnterName.Visible = false;
@@ -82,17 +83,19 @@ namespace Undertale
                     Button_exit_dungeon.Visible = false;
                     Script_ChoiceDungeon.Visible = false;
 
+
                 }));
             }
 
 
         }
 
-        private void timer1_Tick(object sender, EventArgs e)
+        public void timer1_Tick(object sender, EventArgs e)
         {
             Script_ChoiceDungeon.Visible = false;
-            Script_superEndroitSTATIC.Visible = true;
-            timer1.Stop();
+
+            timer_Choice_dungeon.Stop();
+
         }
     }
 }

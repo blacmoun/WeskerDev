@@ -26,7 +26,10 @@ namespace Undertale
             userControl4 = new Frame_ContinueAlone();
             userControl4.Visible = false;
             Controls.Add(userControl4);
-            
+
+
+
+
 
         }
 
@@ -53,6 +56,8 @@ namespace Undertale
                 secondForm.Button_exit_dungeon.Visible = false;
                 Button_ContinueTalkToGoat.Visible = false;
                 Button_FollowTheGoat_TalkToGoat.Visible = false;
+                secondForm.Script_superEndroitSTATIC.Visible = false;
+                secondForm.Script_ChoiceDungeon.Visible = false;
 
 
             }
@@ -82,7 +87,8 @@ namespace Undertale
                 secondForm.Button_exit_dungeon.Visible = false;
                 Button_ContinueTalkToGoat.Visible = false;
                 Button_FollowTheGoat_TalkToGoat.Visible = false;
-
+                secondForm.Script_superEndroitSTATIC.Visible = false;
+                secondForm.Script_ChoiceDungeon.Visible = false;
 
 
             }

@@ -13,6 +13,7 @@ namespace Undertale
     public partial class Intro : UserControl
     {
 
+
         public Choice_Dungeon userControl1;
 
         public Intro()
@@ -22,6 +23,9 @@ namespace Undertale
             userControl1 = new Choice_Dungeon();
             userControl1.Visible = false;
             Controls.Add(userControl1);
+
+            userControl1.Enabled = false;
+
         }
 
 
@@ -37,6 +41,8 @@ namespace Undertale
                     parentForm.EnterName_next_button.Visible = false;
                     parentForm.EnterName_pictureBox.Visible = false;
                     parentForm.TextBox_EnterName.Visible = false;
+
+                    button_skip.Visible = false;
 
 
                     if (!userControl1.Visible)
@@ -57,9 +63,14 @@ namespace Undertale
         }
 
         private void button1_Click(object sender, EventArgs e)
-        {                 
-               SkipIntro();
-            button_skip.Visible = false;
+        {
+            userControl1.Enabled = true;
+
+            userControl1.timer_Choice_dungeon.Interval = 4000;
+            userControl1.timer_Choice_dungeon.Start();
+            userControl1.timer_Choice_dungeon.Tick += userControl1.timer1_Tick;
+            SkipIntro();
+
 
         }
     }
