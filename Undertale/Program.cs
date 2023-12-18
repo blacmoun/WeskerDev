@@ -8,6 +8,8 @@ namespace Undertale
     public static class Program
     {
         public static Undertale undertaleForm;
+        public static Intro introControl;
+        public static Choice_Dungeon ChoiceControl;
 
         [STAThread]
         public static void Main()
@@ -42,12 +44,16 @@ namespace Undertale
             Game gameForm = new Game();
             gameForm.WindowState = FormWindowState.Maximized;
 
-            Intro userControl0 = new Intro();
-            gameForm.Controls.Clear();
-            gameForm.Controls.Add(userControl0);
-            gameForm.Visible = true;
+            if (introControl == null)
+            {
+                introControl = new Intro();
+                gameForm.Controls.Clear();
+                gameForm.Controls.Add(introControl);
+                gameForm.Visible = true;
+                introControl.button_skip.Click += (sender, e) => button_skip_click();
+                introControl.button_skip.Click += (sender, e) => gameForm.Close();
+            }
         }
-
         public static void EnterName_next_button_Click(Game gameForm)
         {
             string enteredName = gameForm.TextBox_EnterName.Text.Trim();
@@ -58,7 +64,19 @@ namespace Undertale
             gameForm.Close();
             ShowIntro();
         }
+        public static void button_skip_click()
+        {
+            ShowChoiceDungon();
+        }
+        public static void ShowChoiceDungon()
+        {
+            Game gameForm = new Game();
+            gameForm.WindowState = FormWindowState.Maximized;
 
-
+            ChoiceControl = new Choice_Dungeon();
+            gameForm.Controls.Clear();
+            gameForm.Controls.Add(ChoiceControl);
+            gameForm.Visible = true;
+        }
     }
 }

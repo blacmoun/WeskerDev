@@ -63,5 +63,14 @@ namespace Undertale
             timer1.Stop();
 
         }
+
+        private void EnterName_next_button_KeyDown(object sender, KeyEventArgs e)
+        {
+            Game gameForm = new Game();
+            if (e.KeyCode == Keys.Enter)
+            {
+                Program.EnterName_next_button_Click(gameForm);
+            }
+        }
     }
 }
