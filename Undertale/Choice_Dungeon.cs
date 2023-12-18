@@ -67,9 +67,9 @@ namespace Undertale
 
         private void ButtonEnterDungeon_Click(object sender, EventArgs e)
         {
-          /*  userControl2.Timer_FriskTalkToGoat.Interval = 4000;
-            userControl1.timer_Choice_dungeon.Start();
-            userControl1.timer_Choice_dungeon.Tick += userControl1.timer1_Tick;*/
+           userControl2.Timer_FriskTalkToGoat.Interval = 4000;
+            userControl2.Timer_FriskTalkToGoat.Start();
+            userControl2.Timer_FriskTalkToGoat.Tick += userControl2.Timer_FriskTalkToGoat_Tick;
             Game parentForm = this.FindForm() as Game;
             if (parentForm != null)
             {

@@ -81,7 +81,7 @@
             Script_ChoiceDungeon.Image = (Image)resources.GetObject("Script_ChoiceDungeon.Image");
             Script_ChoiceDungeon.Location = new Point(530, 16);
             Script_ChoiceDungeon.Name = "Script_ChoiceDungeon";
-            Script_ChoiceDungeon.Size = new Size(877, 233);
+            Script_ChoiceDungeon.Size = new Size(886, 233);
             Script_ChoiceDungeon.SizeMode = PictureBoxSizeMode.StretchImage;
             Script_ChoiceDungeon.TabIndex = 2;
             Script_ChoiceDungeon.TabStop = false;

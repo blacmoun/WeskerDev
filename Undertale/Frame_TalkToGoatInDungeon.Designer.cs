@@ -124,7 +124,7 @@
         public WindowsFormsApp1.RJButton Button_FollowTheGoat_TalkToGoat;
         public PictureBox Script_FriskTalkToGoat_STATIC;
         public PictureBox Script_talktoGoat;
-        private System.Windows.Forms.Timer Timer_FriskTalkToGoat;
         private System.ComponentModel.IContainer components;
+        public System.Windows.Forms.Timer Timer_FriskTalkToGoat;
     }
 }
