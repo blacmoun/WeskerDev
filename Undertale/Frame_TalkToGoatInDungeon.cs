@@ -53,6 +53,8 @@ namespace Undertale
                 Button_FollowTheGoat_TalkToGoat.Visible = false;
                 secondForm.Script_superEndroitSTATIC.Visible = false;
                 secondForm.Script_ChoiceDungeon.Visible = false;
+                Script_FriskTalkToGoat_STATIC.Visible = false;
+                Script_talktoGoat.Visible = false;
 
 
             }
@@ -76,7 +78,10 @@ namespace Undertale
                 userControl4.Visible = true;
                 secondForm.userControl2.Visible = false;
                 secondForm.Script_ChoiceDungeon.Visible = false;
-
+                secondForm.Script_superEndroitSTATIC.Visible = false;
+                secondForm.Script_ChoiceDungeon.Visible = false;
+                Script_talktoGoat.Visible = false;
+                Script_FriskTalkToGoat_STATIC.Visible = false;
 
                 secondForm.ButtonEnterDungeon.Visible = false;
                 secondForm.Button_exit_dungeon.Visible = false;
