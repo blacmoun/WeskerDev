@@ -31,6 +31,10 @@ namespace Undertale
 
         private void Button_FollowTheGoat_TalkToGoat_Click_1(object sender, EventArgs e)
         {
+            userControl3.Timer_InFrontOfHouse.Interval = 4000;
+            userControl3.Timer_InFrontOfHouse.Start();
+            userControl3.Timer_InFrontOfHouse.Tick += userControl3.Timer_InfrontofHouse_Tick;
+
             Game parentForm = this.FindForm() as Game;
             if (parentForm != null)
             {

@@ -28,8 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frame_inFrontOfHouse));
             ButtonGoToDoor = new WindowsFormsApp1.RJButton();
+            Script_InfrontOfHouse_STATIC = new PictureBox();
+            Script_InfrontOfHouse = new PictureBox();
+            Timer_InFrontOfHouse = new System.Windows.Forms.Timer(components);
+            ((System.ComponentModel.ISupportInitialize)Script_InfrontOfHouse_STATIC).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)Script_InfrontOfHouse).BeginInit();
             SuspendLayout();
             // 
             // ButtonGoToDoor
@@ -52,20 +58,49 @@
             ButtonGoToDoor.UseVisualStyleBackColor = false;
             ButtonGoToDoor.Click += ButtonEnterDungeon_Click;
             // 
+            // Script_InfrontOfHouse_STATIC
+            // 
+            Script_InfrontOfHouse_STATIC.BackgroundImageLayout = ImageLayout.Stretch;
+            Script_InfrontOfHouse_STATIC.Image = (Image)resources.GetObject("Script_InfrontOfHouse_STATIC.Image");
+            Script_InfrontOfHouse_STATIC.Location = new Point(603, 43);
+            Script_InfrontOfHouse_STATIC.Name = "Script_InfrontOfHouse_STATIC";
+            Script_InfrontOfHouse_STATIC.Size = new Size(877, 233);
+            Script_InfrontOfHouse_STATIC.SizeMode = PictureBoxSizeMode.StretchImage;
+            Script_InfrontOfHouse_STATIC.TabIndex = 5;
+            Script_InfrontOfHouse_STATIC.TabStop = false;
+            // 
+            // Script_InfrontOfHouse
+            // 
+            Script_InfrontOfHouse.BackgroundImageLayout = ImageLayout.Stretch;
+            Script_InfrontOfHouse.Image = (Image)resources.GetObject("Script_InfrontOfHouse.Image");
+            Script_InfrontOfHouse.Location = new Point(603, 43);
+            Script_InfrontOfHouse.Name = "Script_InfrontOfHouse";
+            Script_InfrontOfHouse.Size = new Size(877, 233);
+            Script_InfrontOfHouse.SizeMode = PictureBoxSizeMode.StretchImage;
+            Script_InfrontOfHouse.TabIndex = 6;
+            Script_InfrontOfHouse.TabStop = false;
+            // 
             // Frame_inFrontOfHouse
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
+            Controls.Add(Script_InfrontOfHouse);
             Controls.Add(ButtonGoToDoor);
+            Controls.Add(Script_InfrontOfHouse_STATIC);
             Name = "Frame_inFrontOfHouse";
             Size = new Size(1910, 1100);
+            ((System.ComponentModel.ISupportInitialize)Script_InfrontOfHouse_STATIC).EndInit();
+            ((System.ComponentModel.ISupportInitialize)Script_InfrontOfHouse).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
         public WindowsFormsApp1.RJButton ButtonGoToDoor;
+        public PictureBox Script_InfrontOfHouse_STATIC;
+        public PictureBox Script_InfrontOfHouse;
+        public System.Windows.Forms.Timer Timer_InFrontOfHouse;
     }
 }
