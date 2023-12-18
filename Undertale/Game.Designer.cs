@@ -68,7 +68,7 @@ namespace Undertale
             EnterName_next_button.FlatStyle = FlatStyle.Flat;
             EnterName_next_button.Font = new Font("Segoe UI", 19F);
             EnterName_next_button.ForeColor = Color.White;
-            EnterName_next_button.Location = new Point(1139, 688);
+            EnterName_next_button.Location = new Point(1139, 682);
             EnterName_next_button.Name = "EnterName_next_button";
             EnterName_next_button.Size = new Size(315, 78);
             EnterName_next_button.TabIndex = 0;

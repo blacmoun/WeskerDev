@@ -55,7 +55,6 @@
             button_skip.TabIndex = 0;
             button_skip.Text = "Passer";
             button_skip.UseVisualStyleBackColor = false;
-            button_skip.Click += button1_Click;
             // 
             // Intro
             // 
