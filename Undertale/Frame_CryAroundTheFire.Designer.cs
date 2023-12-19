@@ -50,7 +50,6 @@
             Button_ReturnAdventure.Text = "Retourner à l'aventure";
             Button_ReturnAdventure.TextColor = Color.White;
             Button_ReturnAdventure.UseVisualStyleBackColor = false;
-            Button_ReturnAdventure.Click += Button_ReturnAdventure_Click;
             // 
             // Frame_cryAroundTheFire
             // 
