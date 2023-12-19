@@ -16,5 +16,10 @@ namespace Undertale
         {
             InitializeComponent();
         }
+
+        public void Button_ReturnAdventure_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -29,7 +29,28 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frame_cryAroundTheFire));
+            Button_ReturnAdventure = new WindowsFormsApp1.RJButton();
             SuspendLayout();
+            // 
+            // Button_ReturnAdventure
+            // 
+            Button_ReturnAdventure.BackColor = Color.Transparent;
+            Button_ReturnAdventure.BackgroundColor = Color.Transparent;
+            Button_ReturnAdventure.BorderColor = Color.PaleVioletRed;
+            Button_ReturnAdventure.BorderRadius = 40;
+            Button_ReturnAdventure.BorderSize = 0;
+            Button_ReturnAdventure.FlatAppearance.BorderSize = 0;
+            Button_ReturnAdventure.FlatStyle = FlatStyle.Flat;
+            Button_ReturnAdventure.Font = new Font("Segoe UI", 19F);
+            Button_ReturnAdventure.ForeColor = Color.White;
+            Button_ReturnAdventure.Location = new Point(1367, 477);
+            Button_ReturnAdventure.Name = "Button_ReturnAdventure";
+            Button_ReturnAdventure.Size = new Size(315, 82);
+            Button_ReturnAdventure.TabIndex = 2;
+            Button_ReturnAdventure.Text = "Retourner à l'aventure";
+            Button_ReturnAdventure.TextColor = Color.White;
+            Button_ReturnAdventure.UseVisualStyleBackColor = false;
+            Button_ReturnAdventure.Click += Button_ReturnAdventure_Click;
             // 
             // Frame_cryAroundTheFire
             // 
@@ -37,11 +58,14 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
+            Controls.Add(Button_ReturnAdventure);
             Name = "Frame_cryAroundTheFire";
             Size = new Size(1910, 1100);
             ResumeLayout(false);
         }
 
         #endregion
+
+        public WindowsFormsApp1.RJButton Button_ReturnAdventure;
     }
 }
