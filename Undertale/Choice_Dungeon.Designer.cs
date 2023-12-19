@@ -71,18 +71,31 @@
             Button_exit_dungeon.UseVisualStyleBackColor = false;
             Button_exit_dungeon.Click += Button_exit_dungeon_Click;
             // 
-            // Script_superEndroitSTATIC
             // 
+
+            // Script_superEndroitSTATIC
             Script_superEndroitSTATIC.BackgroundImageLayout = ImageLayout.Stretch;
             Script_superEndroitSTATIC.Image = (Image)resources.GetObject("Script_superEndroitSTATIC.Image");
-            Script_superEndroitSTATIC.Location = new Point(535, 26);
-            Script_superEndroitSTATIC.Name = "Script_superEndroitSTATIC";
             Script_superEndroitSTATIC.Size = new Size(886, 233);
             Script_superEndroitSTATIC.SizeMode = PictureBoxSizeMode.StretchImage;
             Script_superEndroitSTATIC.TabIndex = 3;
             Script_superEndroitSTATIC.TabStop = false;
-            Script_superEndroitSTATIC.WaitOnLoad = true;
-            // 
+            Script_superEndroitSTATIC.Name = "Script_superEndroitSTATIC";
+
+            // Ajoutez le contrôle à votre formulaire
+            Controls.Add(Script_superEndroitSTATIC);
+
+            // Obtenez la largeur de l'écran
+            int largeurEcran = Screen.PrimaryScreen.Bounds.Width;
+
+            // Calculez la position x pour centrer le contrôle
+            int positionX = (largeurEcran - Script_superEndroitSTATIC.Width) / 2;
+
+            // Définissez la position en haut de la page
+            Script_superEndroitSTATIC.Location = new Point(positionX, 26);
+
+
+
             // Choice_Dungeon
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);

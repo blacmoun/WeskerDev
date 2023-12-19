@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frame_ContinueAlone));
             Button_CryArroundTheFire = new WindowsFormsApp1.RJButton();
+            Button_ContinueToTheEnd = new WindowsFormsApp1.RJButton();
             SuspendLayout();
             // 
             // Button_CryArroundTheFire
@@ -43,7 +44,7 @@
             Button_CryArroundTheFire.FlatStyle = FlatStyle.Flat;
             Button_CryArroundTheFire.Font = new Font("Segoe UI", 19F);
             Button_CryArroundTheFire.ForeColor = Color.White;
-            Button_CryArroundTheFire.Location = new Point(1227, 626);
+            Button_CryArroundTheFire.Location = new Point(1172, 509);
             Button_CryArroundTheFire.Name = "Button_CryArroundTheFire";
             Button_CryArroundTheFire.Size = new Size(315, 82);
             Button_CryArroundTheFire.TabIndex = 1;
@@ -52,12 +53,33 @@
             Button_CryArroundTheFire.UseVisualStyleBackColor = false;
             Button_CryArroundTheFire.Click += ButtonCryArroundTheFire_Click;
             // 
+            // Button_ContinueToTheEnd
+            // 
+            Button_ContinueToTheEnd.BackColor = Color.Transparent;
+            Button_ContinueToTheEnd.BackgroundColor = Color.Transparent;
+            Button_ContinueToTheEnd.BorderColor = Color.PaleVioletRed;
+            Button_ContinueToTheEnd.BorderRadius = 40;
+            Button_ContinueToTheEnd.BorderSize = 0;
+            Button_ContinueToTheEnd.FlatAppearance.BorderSize = 0;
+            Button_ContinueToTheEnd.FlatStyle = FlatStyle.Flat;
+            Button_ContinueToTheEnd.Font = new Font("Segoe UI", 19F);
+            Button_ContinueToTheEnd.ForeColor = Color.White;
+            Button_ContinueToTheEnd.Location = new Point(1172, 662);
+            Button_ContinueToTheEnd.Name = "Button_ContinueToTheEnd";
+            Button_ContinueToTheEnd.Size = new Size(315, 82);
+            Button_ContinueToTheEnd.TabIndex = 2;
+            Button_ContinueToTheEnd.Text = "Continuer jusqu'au bout du chemin";
+            Button_ContinueToTheEnd.TextColor = Color.White;
+            Button_ContinueToTheEnd.UseVisualStyleBackColor = false;
+            Button_ContinueToTheEnd.Click += Button_ContinueToTheEnd_Click;
+            // 
             // Frame_ContinueAlone
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
+            Controls.Add(Button_ContinueToTheEnd);
             Controls.Add(Button_CryArroundTheFire);
             Name = "Frame_ContinueAlone";
             Size = new Size(1910, 1100);
@@ -67,5 +89,6 @@
         #endregion
 
         public WindowsFormsApp1.RJButton Button_CryArroundTheFire;
+        public WindowsFormsApp1.RJButton Button_ContinueToTheEnd;
     }
 }
