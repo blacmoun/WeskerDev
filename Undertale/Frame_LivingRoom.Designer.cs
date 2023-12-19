@@ -50,7 +50,6 @@
             Button_ToKitchenFromLivingRoom.Text = "Aller dans la cuisine";
             Button_ToKitchenFromLivingRoom.TextColor = Color.White;
             Button_ToKitchenFromLivingRoom.UseVisualStyleBackColor = false;
-            Button_ToKitchenFromLivingRoom.Click += ButtonEnter_InFrontOfTheDoor_Click;
             // 
             // Frame_LivingRoom
             // 

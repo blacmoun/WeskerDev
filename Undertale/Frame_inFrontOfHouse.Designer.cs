@@ -54,7 +54,6 @@
             ButtonGoToDoor.Text = "Suivant";
             ButtonGoToDoor.TextColor = Color.White;
             ButtonGoToDoor.UseVisualStyleBackColor = false;
-            ButtonGoToDoor.Click += ButtonEnterDungeon_Click;
             // 
             // pictureBox1
             // 
