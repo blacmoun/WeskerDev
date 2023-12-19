@@ -69,17 +69,17 @@
             Button_exit_dungeon.TextColor = Color.White;
             Button_exit_dungeon.UseVisualStyleBackColor = false;
             // 
-            // 
-
             // Script_superEndroitSTATIC
+            // 
             Script_superEndroitSTATIC.BackgroundImageLayout = ImageLayout.Stretch;
             Script_superEndroitSTATIC.Image = (Image)resources.GetObject("Script_superEndroitSTATIC.Image");
+            Script_superEndroitSTATIC.Location = new Point(481, 18);
+            Script_superEndroitSTATIC.Name = "Script_superEndroitSTATIC";
             Script_superEndroitSTATIC.Size = new Size(886, 233);
             Script_superEndroitSTATIC.SizeMode = PictureBoxSizeMode.StretchImage;
             Script_superEndroitSTATIC.TabIndex = 3;
             Script_superEndroitSTATIC.TabStop = false;
             Script_superEndroitSTATIC.WaitOnLoad = true;
-            // 
             // 
             // Choice_Dungeon
             // 

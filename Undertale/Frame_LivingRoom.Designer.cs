@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frame_LivingRoom));
             Button_ToKitchenFromLivingRoom = new WindowsFormsApp1.RJButton();
+            Button_backToHall = new WindowsFormsApp1.RJButton();
             SuspendLayout();
             // 
             // Button_ToKitchenFromLivingRoom
@@ -51,12 +52,32 @@
             Button_ToKitchenFromLivingRoom.TextColor = Color.White;
             Button_ToKitchenFromLivingRoom.UseVisualStyleBackColor = false;
             // 
+            // Button_backToHall
+            // 
+            Button_backToHall.BackColor = Color.Transparent;
+            Button_backToHall.BackgroundColor = Color.Transparent;
+            Button_backToHall.BorderColor = Color.PaleVioletRed;
+            Button_backToHall.BorderRadius = 40;
+            Button_backToHall.BorderSize = 0;
+            Button_backToHall.FlatAppearance.BorderSize = 0;
+            Button_backToHall.FlatStyle = FlatStyle.Flat;
+            Button_backToHall.Font = new Font("Segoe UI", 19F);
+            Button_backToHall.ForeColor = Color.White;
+            Button_backToHall.Location = new Point(142, 372);
+            Button_backToHall.Name = "Button_backToHall";
+            Button_backToHall.Size = new Size(315, 78);
+            Button_backToHall.TabIndex = 4;
+            Button_backToHall.Text = "Revenir au Hall";
+            Button_backToHall.TextColor = Color.White;
+            Button_backToHall.UseVisualStyleBackColor = false;
+            // 
             // Frame_LivingRoom
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
+            Controls.Add(Button_backToHall);
             Controls.Add(Button_ToKitchenFromLivingRoom);
             Name = "Frame_LivingRoom";
             Size = new Size(1910, 1100);
@@ -66,5 +87,6 @@
         #endregion
 
         public WindowsFormsApp1.RJButton Button_ToKitchenFromLivingRoom;
+        public WindowsFormsApp1.RJButton Button_backToHall;
     }
 }

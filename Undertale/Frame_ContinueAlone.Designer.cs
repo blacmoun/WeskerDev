@@ -70,7 +70,6 @@
             Button_ContinueToTheEnd.Text = "Continuer jusqu'au bout du chemin";
             Button_ContinueToTheEnd.TextColor = Color.White;
             Button_ContinueToTheEnd.UseVisualStyleBackColor = false;
-            Button_ContinueToTheEnd.Click += Button_ContinueToTheEnd_Click;
             // 
             // Frame_ContinueAlone
             // 

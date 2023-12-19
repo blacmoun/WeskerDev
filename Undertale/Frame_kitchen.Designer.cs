@@ -29,7 +29,27 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frame_kitchen));
+            Button_backToLivingRoom = new WindowsFormsApp1.RJButton();
             SuspendLayout();
+            // 
+            // Button_backToLivingRoom
+            // 
+            Button_backToLivingRoom.BackColor = Color.Transparent;
+            Button_backToLivingRoom.BackgroundColor = Color.Transparent;
+            Button_backToLivingRoom.BorderColor = Color.PaleVioletRed;
+            Button_backToLivingRoom.BorderRadius = 40;
+            Button_backToLivingRoom.BorderSize = 0;
+            Button_backToLivingRoom.FlatAppearance.BorderSize = 0;
+            Button_backToLivingRoom.FlatStyle = FlatStyle.Flat;
+            Button_backToLivingRoom.Font = new Font("Segoe UI", 19F);
+            Button_backToLivingRoom.ForeColor = Color.White;
+            Button_backToLivingRoom.Location = new Point(191, 347);
+            Button_backToLivingRoom.Name = "Button_backToLivingRoom";
+            Button_backToLivingRoom.Size = new Size(315, 78);
+            Button_backToLivingRoom.TabIndex = 5;
+            Button_backToLivingRoom.Text = "Revenir au Salon";
+            Button_backToLivingRoom.TextColor = Color.White;
+            Button_backToLivingRoom.UseVisualStyleBackColor = false;
             // 
             // Frame_kitchen
             // 
@@ -37,11 +57,14 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
+            Controls.Add(Button_backToLivingRoom);
             Name = "Frame_kitchen";
             Size = new Size(1910, 1100);
             ResumeLayout(false);
         }
 
         #endregion
+
+        public WindowsFormsApp1.RJButton Button_backToLivingRoom;
     }
 }

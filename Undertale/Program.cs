@@ -17,6 +17,7 @@ namespace Undertale
         public static Frame_kitchen? Frame_kitchenControl;
         public static Frame_Bathroom? Frame_BathroomControl;
         public static Frame_cryAroundTheFire? Frame_cryAroundTheFireControl;
+        public static Frame_ToTheEndOfTheWay? Frame_ToTheEndOfTheWayControl;
 
 
         [STAThread]
@@ -134,6 +135,22 @@ namespace Undertale
             gameForm.Visible = true;
             Frame_ContinueAloneControl.Button_CryArroundTheFire.Click += (sender, e) => Button_CryArroundTheFire_click();
             Frame_ContinueAloneControl.Button_CryArroundTheFire.Click += (sender, e) => gameForm.Close();
+            Frame_ContinueAloneControl.Button_ContinueToTheEnd.Click += (sender, e) => Button_ContinueToTheEnd_Click();
+            Frame_ContinueAloneControl.Button_ContinueToTheEnd.Click += (sender, e) => gameForm.Close();
+
+        }
+        public static void Button_ContinueToTheEnd_Click()
+        {
+            ShowToTheEndOfTheWay();
+        }
+        public static void ShowToTheEndOfTheWay()
+        {
+            Game gameForm = new Game();
+            gameForm.WindowState = FormWindowState.Maximized;
+            Frame_ToTheEndOfTheWayControl = new Frame_ToTheEndOfTheWay();
+            gameForm.Controls.Clear();
+            gameForm.Controls.Add(Frame_ToTheEndOfTheWayControl);
+            gameForm.Visible = true;
         }
         public static void ShowInFrontHouse()
         {
@@ -195,7 +212,7 @@ namespace Undertale
         {
             ShowLivingRoom();
         }
-        public static void Button_Bathroom_click() 
+        public static void Button_Bathroom_click()
         {
             ShowBathRoom();
         }
@@ -207,6 +224,13 @@ namespace Undertale
             gameForm.Controls.Clear();
             gameForm.Controls.Add(Frame_BathroomControl);
             gameForm.Visible = true;
+            Frame_BathroomControl.Button_backToLivingRoom.Click += (sender, e) => Button_backToLivingRoomFromBathroom_click();
+            Frame_BathroomControl.Button_backToLivingRoom.Click += (sender, e) => gameForm.Close();
+
+        }
+        public static void Button_backToLivingRoomFromBathroom_click()
+        {
+            ShowHall();
         }
         public static void ShowLivingRoom()
         {
@@ -218,6 +242,13 @@ namespace Undertale
             gameForm.Visible = true;
             Frame_LivingRoomControl.Button_ToKitchenFromLivingRoom.Click += (sender, e) => Button_ToKitchenFromLivingRoom_Click();
             Frame_LivingRoomControl.Button_ToKitchenFromLivingRoom.Click += (sender, e) => gameForm.Close();
+            Frame_LivingRoomControl.Button_backToHall.Click += (sender, e) => Button_backToHall_Click();
+            Frame_LivingRoomControl.Button_backToHall.Click += (sender, e) => gameForm.Close();
+            //
+        }
+        public static void Button_backToHall_Click()
+        {
+            ShowHall();
         }
         public static void Button_ToKitchenFromLivingRoom_Click()
         {
@@ -231,6 +262,13 @@ namespace Undertale
             gameForm.Controls.Clear();
             gameForm.Controls.Add(Frame_kitchenControl);
             gameForm.Visible = true;
+            Frame_kitchenControl.Button_backToLivingRoom.Click += (sender, e) => Button_backToLivingRoomFromLivingRoom_click();
+            Frame_kitchenControl.Button_backToLivingRoom.Click += (sender, e) => gameForm.Close();
         }
+        public static void Button_backToLivingRoomFromLivingRoom_click()
+        {
+            ShowLivingRoom();
+        }
+
     }
 }
