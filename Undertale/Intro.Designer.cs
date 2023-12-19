@@ -29,20 +29,10 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Intro));
-            pictureBox1 = new PictureBox();
             button_skip = new Button();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            Background_Intro = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)Background_Intro).BeginInit();
             SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(0, 0);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(1910, 1100);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
             // 
             // button_skip
             // 
@@ -53,26 +43,40 @@
             button_skip.Name = "button_skip";
             button_skip.Size = new Size(224, 85);
             button_skip.TabIndex = 0;
-            button_skip.Text = "Passer";
+            button_skip.Text = "Commencer";
             button_skip.UseVisualStyleBackColor = false;
+            button_skip.Click += button_skip_Click;
+            // 
+            // Background_Intro
+            // 
+            Background_Intro.BackColor = SystemColors.ActiveCaptionText;
+            Background_Intro.BackgroundImageLayout = ImageLayout.Stretch;
+            Background_Intro.Image = (Image)resources.GetObject("Background_Intro.Image");
+            Background_Intro.Location = new Point(799, 282);
+            Background_Intro.Name = "Background_Intro";
+            Background_Intro.Size = new Size(292, 498);
+            Background_Intro.SizeMode = PictureBoxSizeMode.StretchImage;
+            Background_Intro.TabIndex = 0;
+            Background_Intro.TabStop = false;
             // 
             // Intro
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ActiveCaptionText;
             BackgroundImageLayout = ImageLayout.Stretch;
             Controls.Add(button_skip);
-            Controls.Add(pictureBox1);
+            Controls.Add(Background_Intro);
             DoubleBuffered = true;
             Name = "Intro";
             Size = new Size(1910, 1100);
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)Background_Intro).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private PictureBox pictureBox1;
         public Button button_skip;
+        public PictureBox Background_Intro;
     }
 }

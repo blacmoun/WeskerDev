@@ -72,7 +72,6 @@ namespace Undertale
         {
             Game gameForm = new Game();
             gameForm.WindowState = FormWindowState.Maximized;
-
             ChoiceControl = new Choice_Dungeon();
             gameForm.Controls.Clear();
             gameForm.Controls.Add(ChoiceControl);

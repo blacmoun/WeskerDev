@@ -33,9 +33,8 @@ namespace Undertale
 
                 thirdForm.Button_ContinueTalkToGoat.Visible = false;
                 thirdForm.Button_FollowTheGoat_TalkToGoat.Visible = false;
-                   
+
                 Script_InfrontOfHouse.Visible = false;
-                Script_InfrontOfHouse_STATIC.Visible = false;
 
 
             }
@@ -50,7 +49,6 @@ namespace Undertale
                 thirdForm.Button_ContinueTalkToGoat.Visible = false;
                 thirdForm.Button_FollowTheGoat_TalkToGoat.Visible = false;
                 secondForm.Script_superEndroitSTATIC.Enabled = false;
-                secondForm.Script_ChoiceDungeon.Visible = false;
 
             }
             Game parentForm = this.FindForm() as Game;
@@ -69,11 +67,7 @@ namespace Undertale
         }
 
 
-            public void Timer_InfrontofHouse_Tick(object sender, EventArgs e)
-            {
-                Script_InfrontOfHouse.Visible = false;
-                Timer_InFrontOfHouse.Stop();
-            }
+
 
 
         }

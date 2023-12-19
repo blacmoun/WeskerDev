@@ -31,9 +31,6 @@ namespace Undertale
 
         private void Button_FollowTheGoat_TalkToGoat_Click_1(object sender, EventArgs e)
         {
-            userControl3.Timer_InFrontOfHouse.Interval = 4000;
-            userControl3.Timer_InFrontOfHouse.Start();
-            userControl3.Timer_InFrontOfHouse.Tick += userControl3.Timer_InfrontofHouse_Tick;
 
             Game parentForm = this.FindForm() as Game;
             if (parentForm != null)
@@ -49,15 +46,12 @@ namespace Undertale
             {
                 userControl3.Visible = true;
                 secondForm.userControl2.Visible = false;
-                secondForm.Script_ChoiceDungeon.Visible = false;
 
                 secondForm.ButtonEnterDungeon.Visible = false;
                 secondForm.Button_exit_dungeon.Visible = false;
                 Button_ContinueTalkToGoat.Visible = false;
                 Button_FollowTheGoat_TalkToGoat.Visible = false;
                 secondForm.Script_superEndroitSTATIC.Visible = false;
-                secondForm.Script_ChoiceDungeon.Visible = false;
-                Script_FriskTalkToGoat_STATIC.Visible = false;
                 Script_talktoGoat.Visible = false;
 
 
@@ -81,28 +75,19 @@ namespace Undertale
                 userControl3.Visible = false;
                 userControl4.Visible = true;
                 secondForm.userControl2.Visible = false;
-                secondForm.Script_ChoiceDungeon.Visible = false;
                 secondForm.Script_superEndroitSTATIC.Visible = false;
-                secondForm.Script_ChoiceDungeon.Visible = false;
                 Script_talktoGoat.Visible = false;
-                Script_FriskTalkToGoat_STATIC.Visible = false;
 
                 secondForm.ButtonEnterDungeon.Visible = false;
                 secondForm.Button_exit_dungeon.Visible = false;
                 Button_ContinueTalkToGoat.Visible = false;
                 Button_FollowTheGoat_TalkToGoat.Visible = false;
                 secondForm.Script_superEndroitSTATIC.Visible = false;
-                secondForm.Script_ChoiceDungeon.Visible = false;
 
 
             }
         }
 
-        public void Timer_FriskTalkToGoat_Tick(object sender, EventArgs e)
-        {
-            Script_talktoGoat.Visible = false;
-            Timer_FriskTalkToGoat.Stop();
-        }
 
 
     }

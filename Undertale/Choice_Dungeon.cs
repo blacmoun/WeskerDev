@@ -34,13 +34,12 @@ namespace Undertale
                 parentForm.Invoke(new Action(() =>
                 {
                     usercontrolCredit.Visible = true;
-                    timer_Choice_dungeon.Enabled = false;
+
                     userControl2.Visible = false;
                     parentForm.EnterName_pictureBox.Visible = false;
                     parentForm.TextBox_EnterName.Visible = false;
                     ButtonEnterDungeon.Visible = false;
                     Button_exit_dungeon.Visible = false;
-                    Script_ChoiceDungeon.Visible = false;
                     Script_superEndroitSTATIC.Visible = false;
                 }));
             }
@@ -67,9 +66,6 @@ namespace Undertale
 
         private void ButtonEnterDungeon_Click(object sender, EventArgs e)
         {
-            userControl2.Timer_FriskTalkToGoat.Interval = 4000;
-            userControl2.Timer_FriskTalkToGoat.Start();
-            userControl2.Timer_FriskTalkToGoat.Tick += userControl2.Timer_FriskTalkToGoat_Tick;
             Game parentForm = this.FindForm() as Game;
             if (parentForm != null)
             {
@@ -83,20 +79,11 @@ namespace Undertale
                     parentForm.TextBox_EnterName.Visible = false;
                     ButtonEnterDungeon.Visible = false;
                     Button_exit_dungeon.Visible = false;
-                    Script_ChoiceDungeon.Visible = false;
 
 
                 }));
             }
 
-
-        }
-
-        public void timer1_Tick(object sender, EventArgs e)
-        {
-            Script_ChoiceDungeon.Visible = false;
-
-            timer_Choice_dungeon.Stop();
 
         }
     }
