@@ -179,6 +179,12 @@ namespace Undertale
             gameForm.Controls.Clear();
             gameForm.Controls.Add(Frame_cryAroundTheFireControl);
             gameForm.Visible = true;
+            Frame_cryAroundTheFireControl.Button_ReturnAdventure.Click += (sender, e) => Button_ReturnAdventure_click();
+            Frame_cryAroundTheFireControl.Button_ReturnAdventure.Click += (sender, e) => gameForm.Close();
+        }
+        public static void Button_ReturnAdventure_click()
+        {
+            ShowAlone();
         }
         public static void ShowInFrontOfTheDoor()
         {
