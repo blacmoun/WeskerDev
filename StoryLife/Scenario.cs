@@ -1,4 +1,6 @@
-﻿namespace StoryLife
+﻿using MySql.Data.MySqlClient;
+
+namespace StoryLife
 {
     public class Scenario
     {
@@ -51,5 +53,17 @@
                 return _choice3Name;
             }
         }
+
+        public static string GetFirstPlayerName()
+        {
+            string connString = "server=localhost;user=admin;database=undertale;port=3306;password=admin;";
+            MySqlConnection connection = new MySqlConnection(connString);
+            connection.Open();
+            String query = "SELECT nickname FROM undertale.player ORDER BY player_id LIMIT 1";
+            MySqlCommand cmd = new MySqlCommand(query, connection);
+            string playerName = cmd.ExecuteScalar()?.ToString();
+            return playerName;
+        }
+
     }
 }
