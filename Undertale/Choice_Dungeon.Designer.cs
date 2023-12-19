@@ -24,14 +24,10 @@
         /// </summary>
         public void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Choice_Dungeon));
             ButtonEnterDungeon = new WindowsFormsApp1.RJButton();
             Button_exit_dungeon = new WindowsFormsApp1.RJButton();
-            Script_ChoiceDungeon = new PictureBox();
             Script_superEndroitSTATIC = new PictureBox();
-            timer_Choice_dungeon = new System.Windows.Forms.Timer(components);
-            ((System.ComponentModel.ISupportInitialize)Script_ChoiceDungeon).BeginInit();
             ((System.ComponentModel.ISupportInitialize)Script_superEndroitSTATIC).BeginInit();
             SuspendLayout();
             // 
@@ -73,29 +69,17 @@
             Button_exit_dungeon.TextColor = Color.White;
             Button_exit_dungeon.UseVisualStyleBackColor = false;
             // 
-            // Script_ChoiceDungeon
-            // 
-            Script_ChoiceDungeon.BackgroundImageLayout = ImageLayout.Stretch;
-            Script_ChoiceDungeon.Image = (Image)resources.GetObject("Script_ChoiceDungeon.Image");
-            Script_ChoiceDungeon.Location = new Point(530, 16);
-            Script_ChoiceDungeon.Name = "Script_ChoiceDungeon";
-            Script_ChoiceDungeon.Size = new Size(886, 233);
-            Script_ChoiceDungeon.SizeMode = PictureBoxSizeMode.StretchImage;
-            Script_ChoiceDungeon.TabIndex = 2;
-            Script_ChoiceDungeon.TabStop = false;
-            // 
             // Script_superEndroitSTATIC
             // 
             Script_superEndroitSTATIC.BackgroundImageLayout = ImageLayout.Stretch;
             Script_superEndroitSTATIC.Image = (Image)resources.GetObject("Script_superEndroitSTATIC.Image");
-            Script_superEndroitSTATIC.Location = new Point(530, 16);
+            Script_superEndroitSTATIC.Location = new Point(535, 26);
             Script_superEndroitSTATIC.Name = "Script_superEndroitSTATIC";
             Script_superEndroitSTATIC.Size = new Size(886, 233);
             Script_superEndroitSTATIC.SizeMode = PictureBoxSizeMode.StretchImage;
             Script_superEndroitSTATIC.TabIndex = 3;
             Script_superEndroitSTATIC.TabStop = false;
-            // 
-            // timer_Choice_dungeon
+            Script_superEndroitSTATIC.WaitOnLoad = true;
             // 
             // 
             // Choice_Dungeon
@@ -104,13 +88,11 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
-            Controls.Add(Script_ChoiceDungeon);
             Controls.Add(Button_exit_dungeon);
             Controls.Add(ButtonEnterDungeon);
             Controls.Add(Script_superEndroitSTATIC);
             Name = "Choice_Dungeon";
             Size = new Size(1910, 1100);
-            ((System.ComponentModel.ISupportInitialize)Script_ChoiceDungeon).EndInit();
             ((System.ComponentModel.ISupportInitialize)Script_superEndroitSTATIC).EndInit();
             ResumeLayout(false);
         }
@@ -119,9 +101,7 @@
 
         public WindowsFormsApp1.RJButton ButtonEnterDungeon;
         public WindowsFormsApp1.RJButton Button_exit_dungeon;
-        public PictureBox Script_ChoiceDungeon;
         public PictureBox Script_superEndroitSTATIC;
         private System.ComponentModel.IContainer components;
-        public System.Windows.Forms.Timer timer_Choice_dungeon;
     }
 }

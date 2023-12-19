@@ -29,7 +29,28 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frame_ContinueAlone));
+            Button_CryArroundTheFire = new WindowsFormsApp1.RJButton();
             SuspendLayout();
+            // 
+            // Button_CryArroundTheFire
+            // 
+            Button_CryArroundTheFire.BackColor = Color.Transparent;
+            Button_CryArroundTheFire.BackgroundColor = Color.Transparent;
+            Button_CryArroundTheFire.BorderColor = Color.PaleVioletRed;
+            Button_CryArroundTheFire.BorderRadius = 40;
+            Button_CryArroundTheFire.BorderSize = 0;
+            Button_CryArroundTheFire.FlatAppearance.BorderSize = 0;
+            Button_CryArroundTheFire.FlatStyle = FlatStyle.Flat;
+            Button_CryArroundTheFire.Font = new Font("Segoe UI", 19F);
+            Button_CryArroundTheFire.ForeColor = Color.White;
+            Button_CryArroundTheFire.Location = new Point(1227, 626);
+            Button_CryArroundTheFire.Name = "Button_CryArroundTheFire";
+            Button_CryArroundTheFire.Size = new Size(315, 82);
+            Button_CryArroundTheFire.TabIndex = 1;
+            Button_CryArroundTheFire.Text = "Faire un feu et pleurer autour";
+            Button_CryArroundTheFire.TextColor = Color.White;
+            Button_CryArroundTheFire.UseVisualStyleBackColor = false;
+            Button_CryArroundTheFire.Click += ButtonCryArroundTheFire_Click;
             // 
             // Frame_ContinueAlone
             // 
@@ -37,11 +58,14 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
+            Controls.Add(Button_CryArroundTheFire);
             Name = "Frame_ContinueAlone";
             Size = new Size(1910, 1100);
             ResumeLayout(false);
         }
 
         #endregion
+
+        public WindowsFormsApp1.RJButton Button_CryArroundTheFire;
     }
 }

@@ -44,7 +44,6 @@ namespace Undertale
                 secondForm.ButtonEnterDungeon.Visible = false;
                 secondForm.Button_exit_dungeon.Visible = false;
                 secondForm.Script_superEndroitSTATIC.Visible = false;
-                secondForm.Script_ChoiceDungeon.Visible = false;
             }
 
             Frame_TalkToGoatInDungeon thirdForm = new Frame_TalkToGoatInDungeon();

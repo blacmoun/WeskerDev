@@ -27,5 +27,10 @@ namespace Undertale
             userControl1.Enabled = false;
 
         }
+
+        private void button_skip_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
