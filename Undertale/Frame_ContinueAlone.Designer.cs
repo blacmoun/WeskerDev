@@ -51,7 +51,6 @@
             Button_CryArroundTheFire.Text = "Faire un feu et pleurer autour";
             Button_CryArroundTheFire.TextColor = Color.White;
             Button_CryArroundTheFire.UseVisualStyleBackColor = false;
-            Button_CryArroundTheFire.Click += ButtonCryArroundTheFire_Click;
             // 
             // Button_ContinueToTheEnd
             // 

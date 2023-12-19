@@ -49,7 +49,6 @@
             ButtonEnterDungeon.Text = "Entrer dans le donjon";
             ButtonEnterDungeon.TextColor = Color.White;
             ButtonEnterDungeon.UseVisualStyleBackColor = false;
-            ButtonEnterDungeon.Click += ButtonEnterDungeon_Click;
             // 
             // Button_exit_dungeon
             // 
@@ -69,7 +68,6 @@
             Button_exit_dungeon.Text = "Sortir";
             Button_exit_dungeon.TextColor = Color.White;
             Button_exit_dungeon.UseVisualStyleBackColor = false;
-            Button_exit_dungeon.Click += Button_exit_dungeon_Click;
             // 
             // 
 
@@ -80,22 +78,9 @@
             Script_superEndroitSTATIC.SizeMode = PictureBoxSizeMode.StretchImage;
             Script_superEndroitSTATIC.TabIndex = 3;
             Script_superEndroitSTATIC.TabStop = false;
-            Script_superEndroitSTATIC.Name = "Script_superEndroitSTATIC";
-
-            // Ajoutez le contrôle à votre formulaire
-            Controls.Add(Script_superEndroitSTATIC);
-
-            // Obtenez la largeur de l'écran
-            int largeurEcran = Screen.PrimaryScreen.Bounds.Width;
-
-            // Calculez la position x pour centrer le contrôle
-            int positionX = (largeurEcran - Script_superEndroitSTATIC.Width) / 2;
-
-            // Définissez la position en haut de la page
-            Script_superEndroitSTATIC.Location = new Point(positionX, 26);
-
-
-
+            Script_superEndroitSTATIC.WaitOnLoad = true;
+            // 
+            // 
             // Choice_Dungeon
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);

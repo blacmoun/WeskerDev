@@ -50,7 +50,6 @@
             ButtonEnter_InFrontOfTheDoor.Text = "Entrer";
             ButtonEnter_InFrontOfTheDoor.TextColor = Color.White;
             ButtonEnter_InFrontOfTheDoor.UseVisualStyleBackColor = false;
-            ButtonEnter_InFrontOfTheDoor.Click += ButtonEnter_InFrontOfHouse_Click;
             // 
             // Frame_InFrontOfTheDoor
             // 

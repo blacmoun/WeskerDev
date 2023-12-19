@@ -21,55 +21,5 @@ namespace Undertale
             userControl4.Visible = false;
             Controls.Add(userControl4);
         }
-
-        public void ButtonEnterDungeon_Click(object sender, EventArgs e)
-        {
-
-            Frame_TalkToGoatInDungeon thirdForm = new Frame_TalkToGoatInDungeon();
-            if (thirdForm != null)
-            {
-                userControl4.Visible = true;
-                thirdForm.userControl3.Visible = false;
-
-                thirdForm.Button_ContinueTalkToGoat.Visible = false;
-                thirdForm.Button_FollowTheGoat_TalkToGoat.Visible = false;
-
-                Script_InfrontOfHouse.Visible = false;
-
-
-            }
-            Choice_Dungeon secondForm = new Choice_Dungeon();
-            if (secondForm != null)
-            {
-                userControl4.Visible = true;
-                secondForm.userControl2.Visible = false;
-
-                secondForm.ButtonEnterDungeon.Visible = false;
-                secondForm.Button_exit_dungeon.Visible = false;
-                thirdForm.Button_ContinueTalkToGoat.Visible = false;
-                thirdForm.Button_FollowTheGoat_TalkToGoat.Visible = false;
-                secondForm.Script_superEndroitSTATIC.Enabled = false;
-
-            }
-            Game parentForm = this.FindForm() as Game;
-            if (parentForm != null)
-            {
-                parentForm.Invoke(new Action(() =>
-                {
-                    userControl4.Visible = true;
-                    parentForm.EnterName_pictureBox.Visible = false;
-                    parentForm.TextBox_EnterName.Visible = false;
-                    ButtonGoToDoor.Visible = false;
-                    secondForm.Button_exit_dungeon.Visible = false;
-
-                }));
-            }
-        }
-
-
-
-
-
-        }
     }
-
+}

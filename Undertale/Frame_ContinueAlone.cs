@@ -28,6 +28,7 @@ namespace Undertale
             Controls.Add(userControl10);
         }
 
+
         public void ButtonCryArroundTheFire_Click(object sender, EventArgs e)
         {
             Game parentForm = this.FindForm() as Game;
@@ -56,7 +57,6 @@ namespace Undertale
             if (thirdForm != null)
             {
 
-                thirdForm.Button_ContinueTalkToGoat.Visible = false;
                 thirdForm.Button_FollowTheGoat_TalkToGoat.Visible = false;
                 thirdForm.Script_talktoGoat.Visible = false;
                 Button_CryArroundTheFire.Visible = false;
@@ -96,7 +96,6 @@ namespace Undertale
             if (thirdForm != null)
             {
                 Button_ContinueToTheEnd.Visible = false;
-                thirdForm.Button_ContinueTalkToGoat.Visible = false;
                 thirdForm.Button_FollowTheGoat_TalkToGoat.Visible = false;
                 thirdForm.Script_talktoGoat.Visible = false;
                 Button_CryArroundTheFire.Visible = false;
@@ -105,5 +104,6 @@ namespace Undertale
             }
 
         }
+
     }
 }
