@@ -26,7 +26,7 @@
         {
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frame_TalkToGoatInDungeon));
-            Button_ContinueTalkToGoat = new WindowsFormsApp1.RJButton();
+            Button_ContinueAlone = new WindowsFormsApp1.RJButton();
             Button_FollowTheGoat_TalkToGoat = new WindowsFormsApp1.RJButton();
             Script_FriskTalkToGoat_STATIC = new PictureBox();
             Script_talktoGoat = new PictureBox();
@@ -35,25 +35,24 @@
             ((System.ComponentModel.ISupportInitialize)Script_talktoGoat).BeginInit();
             SuspendLayout();
             // 
-            // Button_ContinueTalkToGoat
+            // Button_ContinueAlone
             // 
-            Button_ContinueTalkToGoat.BackColor = Color.Transparent;
-            Button_ContinueTalkToGoat.BackgroundColor = Color.Transparent;
-            Button_ContinueTalkToGoat.BorderColor = Color.PaleVioletRed;
-            Button_ContinueTalkToGoat.BorderRadius = 40;
-            Button_ContinueTalkToGoat.BorderSize = 0;
-            Button_ContinueTalkToGoat.FlatAppearance.BorderSize = 0;
-            Button_ContinueTalkToGoat.FlatStyle = FlatStyle.Flat;
-            Button_ContinueTalkToGoat.Font = new Font("Segoe UI", 19F);
-            Button_ContinueTalkToGoat.ForeColor = Color.White;
-            Button_ContinueTalkToGoat.Location = new Point(1391, 411);
-            Button_ContinueTalkToGoat.Name = "Button_ContinueTalkToGoat";
-            Button_ContinueTalkToGoat.Size = new Size(315, 78);
-            Button_ContinueTalkToGoat.TabIndex = 0;
-            Button_ContinueTalkToGoat.Text = "Continuer seul";
-            Button_ContinueTalkToGoat.TextColor = Color.White;
-            Button_ContinueTalkToGoat.UseVisualStyleBackColor = false;
-            Button_ContinueTalkToGoat.Click += Button_ContinueTalkToGoat_Click;
+            Button_ContinueAlone.BackColor = Color.Transparent;
+            Button_ContinueAlone.BackgroundColor = Color.Transparent;
+            Button_ContinueAlone.BorderColor = Color.PaleVioletRed;
+            Button_ContinueAlone.BorderRadius = 40;
+            Button_ContinueAlone.BorderSize = 0;
+            Button_ContinueAlone.FlatAppearance.BorderSize = 0;
+            Button_ContinueAlone.FlatStyle = FlatStyle.Flat;
+            Button_ContinueAlone.Font = new Font("Segoe UI", 19F);
+            Button_ContinueAlone.ForeColor = Color.White;
+            Button_ContinueAlone.Location = new Point(1391, 411);
+            Button_ContinueAlone.Name = "Button_ContinueAlone";
+            Button_ContinueAlone.Size = new Size(315, 78);
+            Button_ContinueAlone.TabIndex = 0;
+            Button_ContinueAlone.Text = "Continuer seul";
+            Button_ContinueAlone.TextColor = Color.White;
+            Button_ContinueAlone.UseVisualStyleBackColor = false;
             // 
             // Button_FollowTheGoat_TalkToGoat
             // 
@@ -73,7 +72,6 @@
             Button_FollowTheGoat_TalkToGoat.Text = "Suivre la chèvre";
             Button_FollowTheGoat_TalkToGoat.TextColor = Color.White;
             Button_FollowTheGoat_TalkToGoat.UseVisualStyleBackColor = false;
-            Button_FollowTheGoat_TalkToGoat.Click += Button_FollowTheGoat_TalkToGoat_Click_1;
             // 
             // Script_FriskTalkToGoat_STATIC
             // 
@@ -109,7 +107,7 @@
             BackgroundImageLayout = ImageLayout.Stretch;
             Controls.Add(Script_talktoGoat);
             Controls.Add(Button_FollowTheGoat_TalkToGoat);
-            Controls.Add(Button_ContinueTalkToGoat);
+            Controls.Add(Button_ContinueAlone);
             Controls.Add(Script_FriskTalkToGoat_STATIC);
             Name = "Frame_TalkToGoatInDungeon";
             Size = new Size(1910, 1100);
@@ -120,7 +118,7 @@
 
         #endregion
 
-        public WindowsFormsApp1.RJButton Button_ContinueTalkToGoat;
+        public WindowsFormsApp1.RJButton Button_ContinueAlone;
         public WindowsFormsApp1.RJButton Button_FollowTheGoat_TalkToGoat;
         public PictureBox Script_FriskTalkToGoat_STATIC;
         public PictureBox Script_talktoGoat;

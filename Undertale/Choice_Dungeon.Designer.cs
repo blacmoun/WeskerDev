@@ -53,7 +53,6 @@
             ButtonEnterDungeon.Text = "Entrer dans le donjon";
             ButtonEnterDungeon.TextColor = Color.White;
             ButtonEnterDungeon.UseVisualStyleBackColor = false;
-            ButtonEnterDungeon.Click += ButtonEnterDungeon_Click;
             // 
             // Button_exit_dungeon
             // 
@@ -73,7 +72,6 @@
             Button_exit_dungeon.Text = "Sortir";
             Button_exit_dungeon.TextColor = Color.White;
             Button_exit_dungeon.UseVisualStyleBackColor = false;
-            Button_exit_dungeon.Click += Button_exit_dungeon_Click;
             // 
             // Script_ChoiceDungeon
             // 
@@ -99,7 +97,6 @@
             // 
             // timer_Choice_dungeon
             // 
-            timer_Choice_dungeon.Tick += timer1_Tick;
             // 
             // Choice_Dungeon
             // 

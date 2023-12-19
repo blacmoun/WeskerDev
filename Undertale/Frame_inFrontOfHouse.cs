@@ -31,7 +31,7 @@ namespace Undertale
                 userControl4.Visible = true;
                 thirdForm.userControl3.Visible = false;
 
-                thirdForm.Button_ContinueTalkToGoat.Visible = false;
+                thirdForm.Button_ContinueAlone.Visible = false;
                 thirdForm.Button_FollowTheGoat_TalkToGoat.Visible = false;
                    
                 Script_InfrontOfHouse.Visible = false;
@@ -47,7 +47,7 @@ namespace Undertale
 
                 secondForm.ButtonEnterDungeon.Visible = false;
                 secondForm.Button_exit_dungeon.Visible = false;
-                thirdForm.Button_ContinueTalkToGoat.Visible = false;
+                thirdForm.Button_ContinueAlone.Visible = false;
                 thirdForm.Button_FollowTheGoat_TalkToGoat.Visible = false;
                 secondForm.Script_superEndroitSTATIC.Enabled = false;
                 secondForm.Script_ChoiceDungeon.Visible = false;

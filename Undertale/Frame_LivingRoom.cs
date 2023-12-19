@@ -49,7 +49,7 @@ namespace Undertale
             Frame_TalkToGoatInDungeon thirdForm = new Frame_TalkToGoatInDungeon();
             if (thirdForm != null)
             {
-                thirdForm.Button_ContinueTalkToGoat.Visible = false;
+                thirdForm.Button_ContinueAlone.Visible = false;
                 thirdForm.Button_FollowTheGoat_TalkToGoat.Visible = false;
             }
 
