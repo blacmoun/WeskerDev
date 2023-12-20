@@ -24,14 +24,9 @@ CREATE TABLE IF NOT EXISTS `player` (
   `id` int NOT NULL AUTO_INCREMENT,
   `nickname` varchar(100) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=51 DEFAULT CHARSET=utf8mb3;
 
--- Dumping data for table undertale.player: ~4 rows (approximately)
-INSERT INTO `player` (`id`, `nickname`) VALUES
-	(1, 'Larcane'),
-	(2, 'Larcane'),
-	(3, 'Larcane'),
-	(4, 'LARCANE');
+-- Dumping data for table undertale.player: ~0 rows (approximately)
 
 -- Dumping structure for table undertale.scenario
 CREATE TABLE IF NOT EXISTS `scenario` (
@@ -42,20 +37,26 @@ CREATE TABLE IF NOT EXISTS `scenario` (
   `choice2Name` varchar(255) DEFAULT NULL,
   `choice3Name` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8mb3;
 
--- Dumping data for table undertale.scenario: ~10 rows (approximately)
+-- Dumping data for table undertale.scenario: ~16 rows (approximately)
 INSERT INTO `scenario` (`id`, `imagePlace`, `chapName`, `choice1Name`, `choice2Name`, `choice3Name`) VALUES
 	(1, '-', 'EnterName', 'Entrer dans le donjon', 'Sortir', '-'),
 	(2, '-', 'TalkToGoat', 'Suivre la chèvre', 'Continuer seul', NULL),
-	(3, '-', 'ContinueAlone', NULL, NULL, NULL),
-	(4, '-', 'FrontOfHouse', 'Aller devant la porte', NULL, NULL),
-	(5, '-', 'FrontOfDoor', 'Entrer dans la maison', NULL, NULL),
-	(6, '-', 'CandyHouse', 'Continuer d\'explorer', 'Fuir', NULL),
-	(7, '-', 'CandyKitchen', 'Aller au salon', 'Aller à la salle de bain', NULL),
-	(8, '-', 'CandyLivingRoom', NULL, NULL, NULL),
-	(9, '-', 'CandyBathroom', 'Aller dans la bibliotèque', 'Prendre un bain', NULL),
-	(10, '-', 'CandyLibrary', NULL, NULL, NULL);
+	(3, '-', 'Lost', 'Faire un feu et pleurer autour', 'Continuer jusqu\'au bout du chemin', NULL),
+	(4, '-', 'CampFire', 'Retourner à l\'aventure', NULL, NULL),
+	(5, '-', 'StrangeDoor', 'Enter', NULL, NULL),
+	(6, '-', 'EnterMarkerPlace', 'Visiter le marché', NULL, NULL),
+	(7, '-', 'VisitMarketPlace', NULL, NULL, NULL),
+	(8, '-', NULL, NULL, NULL, NULL),
+	(9, '-', NULL, NULL, NULL, NULL),
+	(10, '-', NULL, NULL, NULL, NULL),
+	(11, '-', 'FrontOfHouse', 'Suivant', NULL, NULL),
+	(12, '-', 'FrontOfDoor', 'Entrer', NULL, NULL),
+	(13, '-', 'CandyHouse', 'Aller dans la salle de bain', 'Aller au salon', NULL),
+	(14, '-', 'Bathroom', 'Revenir au Hall', NULL, NULL),
+	(15, '-', 'Livingroom', 'Revenir au Hall', 'Aller dans la cuisine', NULL),
+	(16, '-', 'Kitchen', 'Revenir au salon', NULL, NULL);
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
