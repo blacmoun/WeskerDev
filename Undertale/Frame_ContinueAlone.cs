@@ -27,5 +27,10 @@ namespace Undertale
             userControl10.Visible = false;
             Controls.Add(userControl10);
         }
+
+        private void Button_ContinueToTheEnd_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
