@@ -1,7 +1,7 @@
 -- --------------------------------------------------------
--- Host:                         127.0.0.1
--- Server version:               8.0.34 - MySQL Community Server - GPL
--- Server OS:                    Win64
+-- Hôte:                         127.0.0.1
+-- Version du serveur:           8.0.34 - MySQL Community Server - GPL
+-- SE du serveur:                Win64
 -- HeidiSQL Version:             12.6.0.6781
 -- --------------------------------------------------------
 
@@ -15,20 +15,20 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 
--- Dumping database structure for undertale
+-- Listage de la structure de la base pour undertale
 CREATE DATABASE IF NOT EXISTS `undertale` /*!40100 DEFAULT CHARACTER SET utf8mb3 */ /*!80016 DEFAULT ENCRYPTION='N' */;
 USE `undertale`;
 
--- Dumping structure for table undertale.player
+-- Listage de la structure de table undertale. player
 CREATE TABLE IF NOT EXISTS `player` (
   `id` int NOT NULL AUTO_INCREMENT,
   `nickname` varchar(100) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=51 DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=59 DEFAULT CHARSET=utf8mb3;
 
--- Dumping data for table undertale.player: ~0 rows (approximately)
+-- Listage des données de la table undertale.player : ~0 rows (environ)
 
--- Dumping structure for table undertale.scenario
+-- Listage de la structure de table undertale. scenario
 CREATE TABLE IF NOT EXISTS `scenario` (
   `id` int NOT NULL AUTO_INCREMENT,
   `imagePlace` varchar(255) DEFAULT NULL,
@@ -39,24 +39,24 @@ CREATE TABLE IF NOT EXISTS `scenario` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8mb3;
 
--- Dumping data for table undertale.scenario: ~16 rows (approximately)
+-- Listage des données de la table undertale.scenario : ~16 rows (environ)
 INSERT INTO `scenario` (`id`, `imagePlace`, `chapName`, `choice1Name`, `choice2Name`, `choice3Name`) VALUES
 	(1, '-', 'EnterName', 'Entrer dans le donjon', 'Sortir', '-'),
-	(2, '-', 'TalkToGoat', 'Suivre la chèvre', 'Continuer seul', NULL),
-	(3, '-', 'Lost', 'Faire un feu et pleurer autour', 'Continuer jusqu\'au bout du chemin', NULL),
-	(4, '-', 'CampFire', 'Retourner à l\'aventure', NULL, NULL),
-	(5, '-', 'StrangeDoor', 'Enter', NULL, NULL),
-	(6, '-', 'EnterMarkerPlace', 'Visiter le marché', NULL, NULL),
-	(7, '-', 'VisitMarketPlace', NULL, NULL, NULL),
-	(8, '-', NULL, NULL, NULL, NULL),
-	(9, '-', NULL, NULL, NULL, NULL),
-	(10, '-', NULL, NULL, NULL, NULL),
-	(11, '-', 'FrontOfHouse', 'Suivant', NULL, NULL),
-	(12, '-', 'FrontOfDoor', 'Entrer', NULL, NULL),
-	(13, '-', 'CandyHouse', 'Aller dans la salle de bain', 'Aller au salon', NULL),
-	(14, '-', 'Bathroom', 'Revenir au Hall', NULL, NULL),
-	(15, '-', 'Livingroom', 'Revenir au Hall', 'Aller dans la cuisine', NULL),
-	(16, '-', 'Kitchen', 'Revenir au salon', NULL, NULL);
+	(2, '-', 'TalkToGoat', 'Suivre la chèvre', 'Continuer seul', '-'),
+	(3, '-', 'Lost', 'Faire un feu et pleurer autour', 'Continuer jusqu\'au bout du chemin', '-'),
+	(4, '-', 'CampFire', 'Retourner à l\'aventure', '-', '-'),
+	(5, '-', 'StrangeDoor', 'Enter', '-', '-'),
+	(6, '-', 'EnterMarkerPlace', 'Visiter le marché', '-', '-'),
+	(7, '-', 'VisitMarketPlace', '-', '-', '-'),
+	(8, '-', '-', '-', '-', '-'),
+	(9, '-', '-', '-', '-', '-'),
+	(10, '-', '-', '-', '-', '-'),
+	(11, '-', 'FrontOfHouse', 'Suivant', '-', '-'),
+	(12, '-', 'FrontOfDoor', 'Entrer', '-', '-'),
+	(13, '-', 'CandyHouse', 'Aller dans la salle de bain', 'Aller au salon', '-'),
+	(14, '-', 'Bathroom', 'Revenir au Hall', '-', '-'),
+	(15, '-', 'Livingroom', 'Revenir au Hall', 'Aller dans la cuisine', '-'),
+	(16, '-', 'Kitchen', 'Revenir au salon', '-', '-');
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
