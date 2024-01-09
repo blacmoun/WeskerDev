@@ -82,5 +82,5 @@ StoryLife est un jeu développé en utilisant le langage de programmation C#. Ce
 ## Contactez-nous
 
 - Timothé Kobel           : timothe.kobel@eduvaud.ch
-- Amin De Abreu Jdidi     : marc-antoine.aboud@eduvaud.ch
-- Marc-Antoine Aboud      : amin.deabreu@eduvaud.ch
+- Amin De Abreu Jdidi     : amin.deabreu@eduvaud.ch
+- Marc-Antoine Aboud      : marc-antoine.aboud@eduvaud.ch
