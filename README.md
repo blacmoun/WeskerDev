@@ -12,9 +12,9 @@ StoryLife est un jeu développé en utilisant le langage de programmation C#. Ce
 
 ### Configuration
 
-- Installer la dernière mise à jour de l'environnement Visual Studio 2022 v17.8.0 (Entreprise) depuis le site officiel.
-- Installer l'installeur MySql (Windows (x86, 32-bit), MSI Installer) depuis le site officiel et choisir le téléchargement via webinstaller (2,1 Mb).
-- Installer HeidiSql depuis le site officiel et ouvrer votre session et entrant vos identifiants que vous avez du configurer lors de l'installation MySql.
+- Installer la dernière mise à jour de l'environnement Visual Studio 2022 v17.8.0 (Entreprise) depuis le site officiel. ("https://visualstudio.microsoft.com/fr/thank-you-downloading-visual-studio/?sku=Enterprise&channel=Release&version=VS2022&source=VSLandingPage&cid=2030&passive=false")
+- Installer l'installeur MySql (Windows (x86, 32-bit), MSI Installer) depuis le site officiel et choisir le téléchargement via webinstaller (2,1 Mb). ("https://dev.mysql.com/get/Downloads/MySQLInstaller/mysql-installer-web-community-8.0.35.0.msi")
+- Installer HeidiSql depuis le site officiel et ouvrer votre session et entrant vos identifiants que vous avez du configurer lors de l'installation MySql. ("https://www.heidisql.com/download.php?download=installer")
 - Lancer le script de la base de donnée "base de donnée.sql" qui est dans le dossier doc pour pouvoir la créer.
 - Créer le compte admin avec le script "user create.sql" qui est dans le dossier doc:
 ## Déploiement
