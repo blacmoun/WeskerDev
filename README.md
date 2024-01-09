@@ -34,10 +34,10 @@ StoryLife est un jeu développé en utilisant le langage de programmation C#. Ce
 
 ## Structure du Projet
 
-🗃️Solution 'StoryLife' (3 of 3 projects)
-	Solution Items
-	🔒StoryLife
-		▷ ᥫ Dependencies
+- 🗃️Solution 'StoryLife' (3 of 3 projects)
+- 	Solution Items
+- 	🔒StoryLife
+- 		▷ ᥫ Dependencies
 		▷ 🔒 C# Choice.cs
 		▷ 🔒 C# Frame.cs
 		▷ 🔒 C# Game.cs
@@ -45,8 +45,8 @@ StoryLife est un jeu développé en utilisant le langage de programmation C#. Ce
 		▷ 🔒 C# Player.cs
 		▷ 🔒 C# Scenario.cs
 		▷ 🔒 C# Story.cs
-	🔒TestStoryLife
-		▷ ᥫ Dependencies
+- 	🔒TestStoryLife
+- 		▷ ᥫ Dependencies
 		    🔒 C# GlobalUsings.cs
 		▷ 🔒 C# TestChoice.cs
 		▷ 🔒 C# TestDbConnection.cs
@@ -56,8 +56,8 @@ StoryLife est un jeu développé en utilisant le langage de programmation C#. Ce
 		▷ 🔒 C# TestPlayer.cs
 		▷ 🔒 C# TestScenario.cs
 		▷ 🔒 C# TestStory.cs
-	🔒Undertale
-		▷ ᥫ Dependencies
+- 	🔒Undertale
+- 		▷ ᥫ Dependencies
 		▷ 🔒 📁 Properties
 		▷ 🔒 📁 Resources
 		▷ 🔒 📁 RJControl
@@ -86,6 +86,6 @@ StoryLife est un jeu développé en utilisant le langage de programmation C#. Ce
 
 ## Contactez-nous
 
-Timothé Kobel           : timothe.kobel@eduvaud.ch
-Amin De Abreu Jdidi     : marc-antoine.aboud@eduvaud.ch
-Marc-Antoine Aboud      : amin.deabreu@eduvaud.ch
+- Timothé Kobel           : timothe.kobel@eduvaud.ch
+- Amin De Abreu Jdidi     : marc-antoine.aboud@eduvaud.ch
+- Marc-Antoine Aboud      : amin.deabreu@eduvaud.ch
