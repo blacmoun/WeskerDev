@@ -6,7 +6,7 @@ StoryLife est un jeu développé en utilisant le langage de programmation C#. Ce
 ## Prérequis
 
 - Langage de Programmation: C#
-- Environnement de Développement: Visual Studio Enterprise 2022 Version 17.7.6
+- Environnement de Développement: Visual Studio Enterprise 2022 Version 17.8.3
 - Moteur de Base de donées: MySql80
 - Support visuel pour la Base de donnée: HeidiSql / MySqlWorkbench 8.0
 
@@ -17,49 +17,75 @@ StoryLife est un jeu développé en utilisant le langage de programmation C#. Ce
 - Installer HeidiSql depuis le site officiel et ouvrer votre session et entrant vos identifiants que vous avez du configurer lors de l'installation MySql.
 - Lancer le script de la base de donnée qui est dans le dossier doc pour pouvoir la créer.
 - Créer un compte admin avec ses identifiants dans HeidiSql:
-nom : admin
-mot de passe : admin
-ce compte aura les droit pour faire des updates et des select.
+	nom : admin
+	mot de passe : admin
 
-## Deployment
+	ce compte aura les droit pour faire des updates et des select.
+
+## Déploiement
 
 - Lancement d'un projet C# Library depuis l'environnement de VS 2022
 - Créer depuis sa solution deux autres projets dont un projet de Test et un autre WindowsForm
 
-### On dev environment
+### Environnement de développement
 
 - Une fois le projet ouvert, aller dans l'onglet Tools, puis dans NuGet Package Manager et séléctionner Package Manager Console
 - Tapez la commande "Install-Package MySQL.Data"
 
-## Directory structure
+## Structure du Projet
 
-* ├───doc
-* ├───Solution Items
-      ├───README.md
-├───StoryLife                                       //classes and packages
-│   ├───Choice.cs
-│   ├───Frame.cs
-│   ├───Game.cs
-│   ├───Menu.cs
-│   ├───Player.cs
-│   ├───Story.cs
-│       └───Dependencies
-└───TestShopping                                    //test classes
-│   ├───GlobalUsings.cs
-│   ├───TestChoice.cs
-│   ├───TestFrame.cs
-│   ├───TestGame.cs
-│   ├───TestMenu.cs
-│   ├───TestPlayer.cs
-│   ├───TestStory.cs
-│       └───Dependencies
-└───Undertale                                      //form app and design
-│   ├───Program.cs
-│   ├───Undertale.cs
-│       └───Dependencies
+🗃️Solution 'StoryLife' (3 of 3 projects)
+	Solution Items
+	🔒StoryLife
+		▷ ᥫ Dependencies
+		▷ 🔒 C# Choice.cs
+		▷ 🔒 C# Frame.cs
+		▷ 🔒 C# Game.cs
+		▷ 🔒 C# Menu.cs
+		▷ 🔒 C# Player.cs
+		▷ 🔒 C# Scenario.cs
+		▷ 🔒 C# Story.cs
+	🔒TestStoryLife
+		▷ ᥫ Dependencies
+		    🔒 C# GlobalUsings.cs
+		▷ 🔒 C# TestChoice.cs
+		▷ 🔒 C# TestDbConnection.cs
+		▷ 🔒 C# TestFrame.cs
+		▷ 🔒 C# TestGame.cs
+		▷ 🔒 C# TestMenu.cs
+		▷ 🔒 C# TestPlayer.cs
+		▷ 🔒 C# TestScenario.cs
+		▷ 🔒 C# TestStory.cs
+	🔒Undertale
+		▷ ᥫ Dependencies
+		▷ 🔒 📁 Properties
+		▷ 🔒 📁 Resources
+		▷ 🔒 📁 RJControl
+		▷ 🔒 🔍 ArroundTheMarket.cs
+		▷ 🔒 🔍 Choice_Dungeon.cs
+		▷ 🔒 🔍 credit.cs
+		   🔒 ⚙️ desktop.ini
+		▷ 🔒 🔍 Frame_Bathroom.cs
+		▷ 🔒 🔍 Frame_ContinueAlone.cs
+		▷ 🔒 🔍 Frame_CryAroundTheFire.cs
+		▷ 🔒 🔍 Frame_EntrenceMarket.cs
+		▷ 🔒 🔍 Frame_hall.cs
+		▷ 🔒 🔍 Frame_inFrontOfHouse.cs
+		▷ 🔒 🔍 Frame InFrontOfTheDoor.cs
+		▷ 🔒 🔍 Frame_kitchen.cs
+		▷ 🔒 🔍 Frame_LivingRoom.cs
+		▷ 🔒 🔍 Frame_TalkToGoatInDungeon.cs
+		▷ 🔒 🔍 Frame_ToTheEndOfTheWay.cs
+		▷ 🔒 🗃️ Game.cs
+		▷ 🔒 🔍 Intro.cs
+		▷ 🔒 🗂️ Launcher.resx
+		▷ 🔒 🗃️ Loading.cs
+		▷ 🔒  C# Program.cs
+		▷ 🔒 🗃️ Settings.cs
+		▷ 🔒 🗃️ Undertale.cs
 
-## Contact
+## Contactez-nous
 
 Timothé Kobel           : timothe.kobel@eduvaud.ch
-Amin De Abreu Jdidi     : amin.deabreu@eduvaud.ch
-Marc-Antoine Aboud      : marc-antoine.aboud@eduvaud.ch
+Amin De Abreu Jdidi     : marc-antoine.aboud@eduvaud.ch
+Marc-Antoine Aboud      : amin.deabreu@eduvaud.ch
