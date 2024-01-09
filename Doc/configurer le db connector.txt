@@ -1,0 +1,4 @@
+il faut créer un compte admin avec ces identifiants 
+nom : admin
+mot de passe : admin
+ce compte aura le droit de faire des updates et des select
