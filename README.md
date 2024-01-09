@@ -19,9 +19,6 @@ StoryLife est un jeu développé en utilisant le langage de programmation C#. Ce
 - Créer un compte admin avec ses identifiants dans HeidiSql:
 	nom : admin
 	mot de passe : admin
-
-	ce compte aura les droit pour faire des updates et des select.
-
 ## Déploiement
 
 - Lancement d'un projet C# Library depuis l'environnement de VS 2022
