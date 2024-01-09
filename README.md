@@ -61,5 +61,5 @@ ce compte aura les droit pour faire des updates et des select.
 ## Contact
 
 Timothé Kobel           : timothe.kobel@eduvaud.ch
-Amin De Abreu Jdidi     : marc-antoine.aboud@eduvaud.ch
-Marc-Antoine Aboud      : amin.deabreu@eduvaud.ch
+Amin De Abreu Jdidi     : amin.deabreu@eduvaud.ch
+Marc-Antoine Aboud      : marc-antoine.aboud@eduvaud.ch
