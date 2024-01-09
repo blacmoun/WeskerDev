@@ -49,16 +49,12 @@ namespace Undertale
         {
             Game gameForm = new Game();
             gameForm.WindowState = FormWindowState.Maximized;
-
-            if (introControl == null)
-            {
-                introControl = new Intro();
-                gameForm.Controls.Clear();
-                gameForm.Controls.Add(introControl);
-                gameForm.Visible = true;
-                introControl.button_skip.Click += (sender, e) => button_skip_click();
-                introControl.button_skip.Click += (sender, e) => gameForm.Close();
-            }
+            introControl = new Intro();
+            gameForm.Controls.Clear();
+            gameForm.Controls.Add(introControl);
+            gameForm.Visible = true;
+            introControl.button_skip.Click += (sender, e) => button_skip_click();
+            introControl.button_skip.Click += (sender, e) => gameForm.Close();
         }
         public static void EnterName_next_button_Click(Game gameForm)
         {
