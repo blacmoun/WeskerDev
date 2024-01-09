@@ -17,7 +17,6 @@ StoryLife est un jeu développé en utilisant le langage de programmation C#. Ce
 - Installer HeidiSql depuis le site officiel et ouvrer votre session et entrant vos identifiants que vous avez du configurer lors de l'installation MySql. ("https://www.heidisql.com/download.php?download=installer")
 - Lancer le script de la base de donnée "base de donnée.sql" qui est dans le dossier doc pour pouvoir la créer.
 - Créer le compte admin avec le script "user create.sql" qui est dans le dossier doc.
-- 
 ## Déploiement
 
 - Lancement d'un projet C# Library depuis l'environnement de VS 2022
